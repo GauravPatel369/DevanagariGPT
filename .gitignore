@@ -1,0 +1,74 @@
+# Large artifacts go to Google Drive; links live in README.md
+data/
+*/data/
+*.bin
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.jsonl.zst
+*.html.gz
+models/*.pkl
+*/tokenizer/spm_input.txt
+*/tokenizer/sweep/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+
+# Tracked deliberately (small, required by the submission checklist):
+!*/tokenizer/*.model
+!*/tokenizer/*.vocab
+!*/data/splits/*.txt
+!*/data/reports/*.json
+!report/figures/*.png
+.venv/
+
+
+# temp
+figures/
+# ...but report figures ARE the deliverable. The brief is explicit that graders
+# will not open Drive folders to find figures: if it is not in the branch, it is
+# not graded. The rule above must not swallow them.
+!report/**/figures/
+!report/**/figures/*.png
+models/
+*.model
+*.vocab
+
+# Phase 2: model weights go to Google Drive, never to git.
+# Each checkpoint is 304 MB (weights + optimizer state + RNG); the brief is
+# explicit that large binary artifacts must not be committed.
+*.pt
+*/checkpoints/
+*/kaggle_output/
+
+# Interactive & scratch test files
+input.txt
+output.txt
+out_put.txt
+output_free.txt
+freee.txt
+output*.txt
+*free*.txt
+
+# Archive and ablation logs
+**/archive_shortcut_data/
+archive_shortcut_data/
+*.log
+
+# LaTeX and HTML build artifacts regarding final_report.pdf
+*.aux
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+report/final_report.tex
+report/final_report.md
+report/*.html
+scripts/compile_latex.py
+scripts/md_to_pdf.py
+
+# Keep final_report.pdf explicitly tracked
+!report/final_report.pdf

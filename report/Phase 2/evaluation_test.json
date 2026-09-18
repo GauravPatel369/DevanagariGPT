@@ -1,0 +1,513 @@
+{
+  "hindi": {
+    "language": "hindi",
+    "reference_statistics": {
+      "distinct_1": 0.3218,
+      "distinct_2": 0.8206,
+      "repetition_rate_4gram": 0.0087
+    },
+    "sweet_spot": {
+      "reference_statistics": {
+        "distinct_1": 0.3218,
+        "distinct_2": 0.8206,
+        "repetition_rate_4gram": 0.0087
+      },
+      "ranking": [
+        {
+          "setting": "T1.0+topp0.95",
+          "naturalness_distance": 0.0078,
+          "chrf2": 21.44,
+          "rep4_delta": 0.0019,
+          "distinct2_delta": -0.0059
+        },
+        {
+          "setting": "T1.0",
+          "naturalness_distance": 0.0163,
+          "chrf2": 21.478,
+          "rep4_delta": -0.0058,
+          "distinct2_delta": 0.0105
+        },
+        {
+          "setting": "T1.0+topp0.9",
+          "naturalness_distance": 0.0276,
+          "chrf2": 21.684,
+          "rep4_delta": 0.0003,
+          "distinct2_delta": -0.0273
+        },
+        {
+          "setting": "T0.8+topp0.9+rep1.2",
+          "naturalness_distance": 0.07,
+          "chrf2": 21.786,
+          "rep4_delta": -0.0029,
+          "distinct2_delta": -0.0671
+        },
+        {
+          "setting": "T1.0+topk50",
+          "naturalness_distance": 0.1035,
+          "chrf2": 21.801,
+          "rep4_delta": 0.0107,
+          "distinct2_delta": -0.0928
+        },
+        {
+          "setting": "T0.8",
+          "naturalness_distance": 0.1236,
+          "chrf2": 21.448,
+          "rep4_delta": 0.0248,
+          "distinct2_delta": -0.0988
+        },
+        {
+          "setting": "T0.8+topp0.9+norepeat4",
+          "naturalness_distance": 0.1255,
+          "chrf2": 21.408,
+          "rep4_delta": -0.0087,
+          "distinct2_delta": -0.1168
+        },
+        {
+          "setting": "T1.5",
+          "naturalness_distance": 0.1692,
+          "chrf2": 18.095,
+          "rep4_delta": -0.0087,
+          "distinct2_delta": 0.1605
+        },
+        {
+          "setting": "T0.8+topp0.9",
+          "naturalness_distance": 0.2582,
+          "chrf2": 20.892,
+          "rep4_delta": 0.0722,
+          "distinct2_delta": -0.186
+        },
+        {
+          "setting": "greedy+norepeat4",
+          "naturalness_distance": 0.3222,
+          "chrf2": 18.734,
+          "rep4_delta": -0.0083,
+          "distinct2_delta": -0.3139
+        },
+        {
+          "setting": "T0.5",
+          "naturalness_distance": 0.7309,
+          "chrf2": 17.965,
+          "rep4_delta": 0.3242,
+          "distinct2_delta": -0.4067
+        },
+        {
+          "setting": "greedy",
+          "naturalness_distance": 1.4186,
+          "chrf2": 13.811,
+          "rep4_delta": 0.7475,
+          "distinct2_delta": -0.6711
+        }
+      ],
+      "best": "T1.0+topp0.95"
+    },
+    "checkpoint": "C:\\LMA\\Mini_Project\\individual-project-GauravPatel369\\hindi\\checkpoints\\last.pt",
+    "step": 27500,
+    "parameters": 25350912,
+    "split": "test",
+    "model_config": {
+      "vocab_size": 10000,
+      "context": 512,
+      "d_model": 512,
+      "n_layer": 7,
+      "n_head": 8,
+      "d_ff": 1792,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "rope_theta": 10000.0
+    },
+    "intrinsic": {
+      "tokens_evaluated": 51399168,
+      "cross_entropy_nats": 3.1942,
+      "perplexity": 24.391,
+      "seconds": 629.6,
+      "bytes_per_token": 9.7857,
+      "bits_per_byte": 0.4709,
+      "compression_ratio_vs_raw": 16.99
+    },
+    "generation": {
+      "greedy": {
+        "bleu_char_4gram": 13.602,
+        "chrf2": 13.811,
+        "rouge_l": 10.929,
+        "distinct_1": 0.0709,
+        "distinct_2": 0.1495,
+        "repetition_rate_4gram": 0.7562
+      },
+      "greedy+norepeat4": {
+        "bleu_char_4gram": 19.666,
+        "chrf2": 18.734,
+        "rouge_l": 13.443,
+        "distinct_1": 0.1655,
+        "distinct_2": 0.5067,
+        "repetition_rate_4gram": 0.0004
+      },
+      "T0.5": {
+        "bleu_char_4gram": 18.767,
+        "chrf2": 17.965,
+        "rouge_l": 13.399,
+        "distinct_1": 0.1409,
+        "distinct_2": 0.4139,
+        "repetition_rate_4gram": 0.3329
+      },
+      "T0.8": {
+        "bleu_char_4gram": 23.082,
+        "chrf2": 21.448,
+        "rouge_l": 13.306,
+        "distinct_1": 0.257,
+        "distinct_2": 0.7218,
+        "repetition_rate_4gram": 0.0335
+      },
+      "T1.0": {
+        "bleu_char_4gram": 22.939,
+        "chrf2": 21.478,
+        "rouge_l": 12.103,
+        "distinct_1": 0.3296,
+        "distinct_2": 0.8311,
+        "repetition_rate_4gram": 0.0029
+      },
+      "T1.5": {
+        "bleu_char_4gram": 14.667,
+        "chrf2": 18.095,
+        "rouge_l": 6.936,
+        "distinct_1": 0.5373,
+        "distinct_2": 0.9811,
+        "repetition_rate_4gram": 0.0
+      },
+      "T1.0+topk50": {
+        "bleu_char_4gram": 23.868,
+        "chrf2": 21.801,
+        "rouge_l": 13.332,
+        "distinct_1": 0.2212,
+        "distinct_2": 0.7278,
+        "repetition_rate_4gram": 0.0194
+      },
+      "T1.0+topp0.9": {
+        "bleu_char_4gram": 23.265,
+        "chrf2": 21.684,
+        "rouge_l": 13.188,
+        "distinct_1": 0.29,
+        "distinct_2": 0.7933,
+        "repetition_rate_4gram": 0.009
+      },
+      "T1.0+topp0.95": {
+        "bleu_char_4gram": 22.908,
+        "chrf2": 21.44,
+        "rouge_l": 12.728,
+        "distinct_1": 0.3122,
+        "distinct_2": 0.8147,
+        "repetition_rate_4gram": 0.0106
+      },
+      "T0.8+topp0.9": {
+        "bleu_char_4gram": 22.531,
+        "chrf2": 20.892,
+        "rouge_l": 13.417,
+        "distinct_1": 0.2013,
+        "distinct_2": 0.6346,
+        "repetition_rate_4gram": 0.0809
+      },
+      "T0.8+topp0.9+rep1.2": {
+        "bleu_char_4gram": 23.441,
+        "chrf2": 21.786,
+        "rouge_l": 12.276,
+        "distinct_1": 0.2498,
+        "distinct_2": 0.7535,
+        "repetition_rate_4gram": 0.0058
+      },
+      "T0.8+topp0.9+norepeat4": {
+        "bleu_char_4gram": 23.247,
+        "chrf2": 21.408,
+        "rouge_l": 13.406,
+        "distinct_1": 0.2226,
+        "distinct_2": 0.7038,
+        "repetition_rate_4gram": 0.0
+      }
+    },
+    "generation_config": {
+      "n_samples": 128,
+      "prompt_tokens": 128,
+      "continue_tokens": 128
+    },
+    "examples": [
+      {
+        "setting": "greedy",
+        "index": 0,
+        "prompt": "्स क्रिकेट की ओर से की गई है।\nलेखक के बारे में\n\nविकाश गौड़: डिप्टी चीफ कंटेंट प्रोड्यूसर कम असिस्टेंट मैनेजर, स्पोर्ट्स\nसंक्षिप्त विवरण:\nविकाश गौड़ पिछले 8 वर्षों से हिंदी डिजिटल पत्रकारिता में सक्रिय",
+        "generated": "हैं और वर्तमान में लाइव हिन्दुस्तान (हिन्दुस्तान टाइम्स ग्रुप) में डिप्टी चीफ कंटेंट प्रोड्यूसर के रूप में कार्यरत हैं।\nविस्तृत बायो:\nविकाश गौड़: डिप्टी चीफ कंटेंट प्रोड्यूसर, स्पोर्ट्स\nसंक्षिप्त विवरण:\nविकाश गौड़ पिछले 8 वर्षों से हिंदी डिजिटल पत्रकारिता में सक्रिय हैं। उन्होंने 2011 से लेकर 2022 त",
+        "reference": "हैं और वर्तमान में लाइव हिन्दुस्तान (हिन्दुस्तान टाइम्स ग्रुप) के स्पोर्ट्स सेक्शन में डिप्टी चीफ कंटेंट प्रोड्यूसर (असिस्टेंट मैनेजर) के रूप में अपनी सेवाएं दे रहे हैं।\nविस्तृत बायो:\nपरिचय और अनुभव: विकाश गौड़ भारतीय डिजिटल स्पोर्ट्स मीडिया का एक उभरता हुआ चेहरा हैं। लगभग 8 वर्षों के अनुभव के साथ, "
+      },
+      {
+        "setting": "greedy",
+        "index": 1,
+        "prompt": "\nकविताओं के हाथ थाम कर\nज़िन्दगी की झंझटों में कूद सकें\nजीना आसान बने\nऔर कविताओं के लिए भी बची रहे\nथोड़ी सी जगह\nउस आसान जीवन में !\n2003 असफलता / अजित सिंह तोमर\nमुद्दत बाद मिलनें पर उसने कहा\nबड़े अश्लील",
+        "generated": "ता / अजित सिंह तोमर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत बाद मिलनें पर\nमुद्दत ",
+        "reference": "हो गए हो तुम\nऔर थोड़े घटिया भी\nउसने जवाब दिया\nकोई नई बात कहो\nइतने दिन बाद मिली हो\nऔर वही कह रही हो\nजो दुनिया कहती है\nअच्छा ! दुनिया ऐसा कहती है तुम्हारे बारे में?\nउसने चौंकते हुए कहा\nहाँ !\nफिर तुम ये नही हो सकते\nतुम तो दुनिया को गलत साबित करने के लिए पैदा हुए थे\nमैं गलत थी फिर इस हिसाब से\nअच्छा क्या"
+      },
+      {
+        "setting": "greedy",
+        "index": 2,
+        "prompt": " काम चालू कराने की मांग की। ग्रामीणों ने बताया कि अक्सर कनीय अभियंता के गायब रहने की वजह से लोकल ब्रांड के छड़ व मिनी प्लांट के सीमेंट व घटिया बालू से निर्माण कार्य हो रहा है। ग्रामीण वीरेंद्र प्रसाद,",
+        "generated": "रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्रसाद, रामचंद्र प्",
+        "reference": "मनोज कुमार, सुदामा राम, राजेंद्र साव, देवलाल सिंह, रोहन प्रसाद, दिलीप चौधरी, उमेश राम, दिलीप कुमार, बिनोद सोनी, उपेंद्र राम, महेंद्र चोधरी, जगदीश राम सहित अन्य ने बताया कि पिलर में 25 की जगह 20 एमएम का छड़ लगाया जा रहा है। छड़ लगाने से पहले नीचे नदी में पीसीसी का ढलाई तक नहीं हुआ है। बालू की जगह पत्"
+      }
+    ]
+  },
+  "nepali": {
+    "language": "nepali",
+    "reference_statistics": {
+      "distinct_1": 0.4949,
+      "distinct_2": 0.9181,
+      "repetition_rate_4gram": 0.0018
+    },
+    "sweet_spot": {
+      "reference_statistics": {
+        "distinct_1": 0.4949,
+        "distinct_2": 0.9181,
+        "repetition_rate_4gram": 0.0018
+      },
+      "ranking": [
+        {
+          "setting": "T1.0",
+          "naturalness_distance": 0.0061,
+          "chrf2": 20.718,
+          "rep4_delta": 0.0013,
+          "distinct2_delta": 0.0048
+        },
+        {
+          "setting": "T1.0+topp0.95",
+          "naturalness_distance": 0.0197,
+          "chrf2": 20.642,
+          "rep4_delta": 0.0075,
+          "distinct2_delta": -0.0122
+        },
+        {
+          "setting": "T1.0+topp0.9",
+          "naturalness_distance": 0.0418,
+          "chrf2": 20.207,
+          "rep4_delta": 0.0154,
+          "distinct2_delta": -0.0264
+        },
+        {
+          "setting": "T0.8+topp0.9+rep1.2",
+          "naturalness_distance": 0.0451,
+          "chrf2": 21.002,
+          "rep4_delta": 0.0074,
+          "distinct2_delta": -0.0377
+        },
+        {
+          "setting": "T1.0+topk50",
+          "naturalness_distance": 0.0591,
+          "chrf2": 20.441,
+          "rep4_delta": 0.0058,
+          "distinct2_delta": -0.0533
+        },
+        {
+          "setting": "T0.8+topp0.9+norepeat4",
+          "naturalness_distance": 0.068,
+          "chrf2": 20.124,
+          "rep4_delta": -0.0012,
+          "distinct2_delta": -0.0668
+        },
+        {
+          "setting": "T1.5",
+          "naturalness_distance": 0.0766,
+          "chrf2": 18.546,
+          "rep4_delta": -0.0018,
+          "distinct2_delta": 0.0748
+        },
+        {
+          "setting": "T0.8",
+          "naturalness_distance": 0.1216,
+          "chrf2": 20.092,
+          "rep4_delta": 0.033,
+          "distinct2_delta": -0.0886
+        },
+        {
+          "setting": "T0.8+topp0.9",
+          "naturalness_distance": 0.2394,
+          "chrf2": 19.146,
+          "rep4_delta": 0.0725,
+          "distinct2_delta": -0.1669
+        },
+        {
+          "setting": "greedy+norepeat4",
+          "naturalness_distance": 0.2429,
+          "chrf2": 17.337,
+          "rep4_delta": 0.0003,
+          "distinct2_delta": -0.2426
+        },
+        {
+          "setting": "T0.5",
+          "naturalness_distance": 0.7111,
+          "chrf2": 16.286,
+          "rep4_delta": 0.2974,
+          "distinct2_delta": -0.4137
+        },
+        {
+          "setting": "greedy",
+          "naturalness_distance": 1.4462,
+          "chrf2": 13.028,
+          "rep4_delta": 0.7315,
+          "distinct2_delta": -0.7147
+        }
+      ],
+      "best": "T1.0"
+    },
+    "checkpoint": "C:\\LMA\\Mini_Project\\individual-project-GauravPatel369\\nepali\\checkpoints\\last.pt",
+    "step": 27500,
+    "parameters": 25350912,
+    "split": "test",
+    "model_config": {
+      "vocab_size": 10000,
+      "context": 512,
+      "d_model": 512,
+      "n_layer": 7,
+      "n_head": 8,
+      "d_ff": 1792,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "rope_theta": 10000.0
+    },
+    "intrinsic": {
+      "tokens_evaluated": 56785408,
+      "cross_entropy_nats": 3.3968,
+      "perplexity": 29.868,
+      "seconds": 689.5,
+      "bytes_per_token": 10.653,
+      "bits_per_byte": 0.46,
+      "compression_ratio_vs_raw": 17.39
+    },
+    "generation": {
+      "greedy": {
+        "bleu_char_4gram": 13.493,
+        "chrf2": 13.028,
+        "rouge_l": 7.374,
+        "distinct_1": 0.1209,
+        "distinct_2": 0.2034,
+        "repetition_rate_4gram": 0.7333
+      },
+      "greedy+norepeat4": {
+        "bleu_char_4gram": 19.428,
+        "chrf2": 17.337,
+        "rouge_l": 9.137,
+        "distinct_1": 0.2882,
+        "distinct_2": 0.6755,
+        "repetition_rate_4gram": 0.0021
+      },
+      "T0.5": {
+        "bleu_char_4gram": 18.084,
+        "chrf2": 16.286,
+        "rouge_l": 8.735,
+        "distinct_1": 0.2367,
+        "distinct_2": 0.5044,
+        "repetition_rate_4gram": 0.2992
+      },
+      "T0.8": {
+        "bleu_char_4gram": 23.661,
+        "chrf2": 20.092,
+        "rouge_l": 9.213,
+        "distinct_1": 0.4079,
+        "distinct_2": 0.8295,
+        "repetition_rate_4gram": 0.0348
+      },
+      "T1.0": {
+        "bleu_char_4gram": 24.613,
+        "chrf2": 20.718,
+        "rouge_l": 8.537,
+        "distinct_1": 0.5095,
+        "distinct_2": 0.9229,
+        "repetition_rate_4gram": 0.0031
+      },
+      "T1.5": {
+        "bleu_char_4gram": 17.7,
+        "chrf2": 18.546,
+        "rouge_l": 3.807,
+        "distinct_1": 0.6216,
+        "distinct_2": 0.9929,
+        "repetition_rate_4gram": 0.0
+      },
+      "T1.0+topk50": {
+        "bleu_char_4gram": 24.343,
+        "chrf2": 20.441,
+        "rouge_l": 9.136,
+        "distinct_1": 0.4107,
+        "distinct_2": 0.8648,
+        "repetition_rate_4gram": 0.0076
+      },
+      "T1.0+topp0.9": {
+        "bleu_char_4gram": 24.073,
+        "chrf2": 20.207,
+        "rouge_l": 8.198,
+        "distinct_1": 0.4655,
+        "distinct_2": 0.8917,
+        "repetition_rate_4gram": 0.0172
+      },
+      "T1.0+topp0.95": {
+        "bleu_char_4gram": 24.53,
+        "chrf2": 20.642,
+        "rouge_l": 8.608,
+        "distinct_1": 0.4859,
+        "distinct_2": 0.9059,
+        "repetition_rate_4gram": 0.0093
+      },
+      "T0.8+topp0.9": {
+        "bleu_char_4gram": 22.151,
+        "chrf2": 19.146,
+        "rouge_l": 9.388,
+        "distinct_1": 0.3591,
+        "distinct_2": 0.7512,
+        "repetition_rate_4gram": 0.0743
+      },
+      "T0.8+topp0.9+rep1.2": {
+        "bleu_char_4gram": 24.814,
+        "chrf2": 21.002,
+        "rouge_l": 8.527,
+        "distinct_1": 0.424,
+        "distinct_2": 0.8804,
+        "repetition_rate_4gram": 0.0092
+      },
+      "T0.8+topp0.9+norepeat4": {
+        "bleu_char_4gram": 23.885,
+        "chrf2": 20.124,
+        "rouge_l": 9.255,
+        "distinct_1": 0.413,
+        "distinct_2": 0.8513,
+        "repetition_rate_4gram": 0.0006
+      }
+    },
+    "generation_config": {
+      "n_samples": 128,
+      "prompt_tokens": 128,
+      "continue_tokens": 128
+    },
+    "examples": [
+      {
+        "setting": "greedy",
+        "index": 0,
+        "prompt": "यत नीति बैठकमा प्रस्तुत गरिने उनले बताए । उनले आर्थिक नीति प्रजातन्त्र समाजवाद हुनुपर्ने र झुपडी र महलमा बस्नेलाई जोड्ने भनेको प्रजातान्त्रिक समाजवादले नै भएको जिकिर गरे । इन्जुरी समयमा अलबुलाहयी नायक",
+        "generated": "को भूमिकामा देखिएका छन् । उनले आफ्नो करियरको 100 औं वार्षिकोत्सवको अवसरमा आफ्नो करियरको 100 औं वार्षिकोत्सव मनाएका हुन् ।\nउनले आफ्नो करियरको 100 औं वार्षिकोत्सव मनाएका हुन् । उनले आफ्नो करियरको 100 औं वार्षिकोत्सव मनाएका हुन् । उनले आफ्नो करियरको 100 औं वार्षिकोत्सव मनाएका हुन् ।\nउनले आफ्नो करियरको ",
+        "reference": "बन्दा साउदीको जित\n\nबुधबार, माघ 3, 2080\n\nकतारको खलिफा अन्तर्राष्ट्रिय रंगशालामा सम्पन्न खेलमा साउदीले खेलको अन्तिम समयसम्म पनि ओमानको दबाब झेलेको थियो । 14औं मिनेटमा प्राप्त पेनाल्टीलाई सदुपयोग गर्दै सलाह अल–याहयाइले ओमानलाई अग्रता दिलाएका थिए । यही गोलमा पहिलो हाफ र खेलको अन्तिम 15 मिनेटसम्म पनि ओमा"
+      },
+      {
+        "setting": "greedy",
+        "index": 1,
+        "prompt": " रसायनले के गर्दौ रहेछ ?”\nसूजी– “सरी, … ”\nत्यसै बेलामा अर्को टि–हेल्पर नजिकै आयो र भन्न लाग्यो– “को हो यो ? ए … चिंने । यी औषधीहरुले पनि आजितै पा¥यो । बेलाकुबेला आइरहन्छन् । यिनीहरुले गर्दा पो हामीलाई",
+        "generated": "पनि केही गर्न सक्थ्यो ।”\n“तिमीले पनि तपाइलाई पनि तपाइको औषधिले के गर्दौ ?”\n“तिमीले पनि तपाइको औषधिले के गर्दौ ?”\n“तिमीले पनि तपाइको औषधिले के गर्दौ ?”\n“तिमीले पनि तपाइको औषधिले के गर्दौ ?”\n“तिमीले तपाइको औषधिले के गर्दौ ?”\n“तिमीले तपाइको औषधि",
+        "reference": "झन काम गर्न गाह्रो भइरहेछ । तिमीलाई थाहा छ, तिमीहरुले यसरी आएर हाम्रोलागि काम गर्नाले हाम्रा आत्मनिर्भरतामा कमी आउनलाग्छ । पछि सानै समस्यामा पनि हामी तिमीहरुका मुख ताक्ने हुन जान्छौं । हामीलाई बेकामे बनाउन आएका हौ भने ठीक छ, त्यसै गर । होइन भने हामीलाई हाम्रा काम हाम्रै तरीकामा गर्न देउ । तिमीहरुको "
+      },
+      {
+        "setting": "greedy",
+        "index": 2,
+        "prompt": "यक छ । मेरो विचारमा हस्तक्षेपकारी भूमिका कुनै व्यक्तिको नैतिक साहसमा मात्र निर्भर रहनु हुँदैन; त्यसलाई संस्थागत व्यवस्था बनाइनुपर्छ । नेतृत्व चयनदेखि मूल्याङ्कनसम्म उत्तरदायित्व र जनवादलाई सुदृढ गर्ने",
+        "generated": "दायित्व पनि हो ।\nअर्को कुरा, नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत्व चयनमा नेतृत",
+        "reference": "नयाँ पद्धतिबारे गम्भीर बहस आवश्यक छ ।\nतर संगठनात्मक सुधार यतिमै सीमित रहन सक्दैन । सोभियत संघमा स्टालिनको कार्यकालदेखि क्रमशः गहिरिँदै आएको नोकरशाही र स्वेच्छाचारी प्रवृत्तिको प्रभाव अझै पनि धेरै देशका कम्युनिस्ट पार्टीमा देखिन्छ । त्यसैले लेनिनवादी संगठनात्मक सिद्धान्तको समयानुकूल समीक्षा, परिमार्ज"
+      }
+    ]
+  },
+  "comparison": {
+    "perplexity_favours": "hindi",
+    "bits_per_byte_favours": "nepali",
+    "perplexity_gap": 5.477,
+    "bits_per_byte_gap": -0.0109,
+    "note": "Perplexity is per token and the two tokenizers differ, so the two metrics can disagree; bits-per-byte is the comparable one."
+  }
+}

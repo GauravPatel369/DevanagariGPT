@@ -1,0 +1,213 @@
+{
+  "language": "hindi",
+  "tag": "finetuned",
+  "checkpoint": "hindi\\reasoning\\checkpoints\\best.pt",
+  "step": 50,
+  "test_sets": {
+    "test_a": {
+      "n": 10,
+      "accuracy": 0.2,
+      "majority_position_baseline": 0.5,
+      "by_category": {
+        "chain2_relation": 0.0,
+        "chain2_superlative": 0.0,
+        "chain3_superlative": 0.0,
+        "direct_comparison": 0.0,
+        "mixed_relation": 1.0,
+        "numeric_comparison": 0.0,
+        "three_entity_ordering": 0.0
+      },
+      "by_hops": {
+        "1": 0.4,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "by_answer_position": {
+        "0": 0.0,
+        "1": 0.4,
+        "2": 0.0
+      },
+      "errors": [
+        {
+          "text": "यदि जितेंद्र की तुलना में हितेश बड़ा है और लोकेश की तुलना में हितेश छोटा है, तो सबसे बड़ा कौन है?",
+          "gold": "लोकेश",
+          "predicted": "हितेश",
+          "generated": "हितेश",
+          "category": "chain2_superlative"
+        },
+        {
+          "text": "लोकेश की उम्र 63 वर्ष और उमेश की उम्र 65 वर्ष है। दोनों में कौन छोटा है?",
+          "gold": "लोकेश",
+          "predicted": "उमेश",
+          "generated": "उमेश",
+          "category": "direct_comparison"
+        },
+        {
+          "text": "लोकेश ने 85 घड़ी खरीदे और भरत ने 89 घड़ी खरीदे। कम कौन है?",
+          "gold": "लोकेश",
+          "predicted": "भरत",
+          "generated": "भरत",
+          "category": "numeric_comparison"
+        },
+        {
+          "text": "योगेश की उम्र 67 वर्ष, हितेश की उम्र 62 वर्ष और जितेंद्र की उम्र 90 वर्ष है। सबसे छोटा कौन है?",
+          "gold": "हितेश",
+          "predicted": "जितेंद्र",
+          "generated": "जितेंद्र",
+          "category": "three_entity_ordering"
+        },
+        {
+          "text": "यदि भरत जितेंद्र से छोटा है और जितेंद्र की तुलना में उमेश लंबा है, तो भरत और उमेश में कौन छोटा है?",
+          "gold": "भरत",
+          "predicted": "उमेश",
+          "generated": "उमेश",
+          "category": "chain2_relation"
+        },
+        {
+          "text": "क्रम इस प्रकार है: भरत की तुलना में लोकेश छोटा, योगेश लोकेश से छोटा और हितेश योगेश से छोटा। दूसरा सबसे लंबा कौन है?",
+          "gold": "लोकेश",
+          "predicted": "भरत",
+          "generated": "भरत",
+          "category": "chain3_superlative"
+        },
+        {
+          "text": "हितेश भरत से छोटा है। लोकेश भरत से बड़ा है। जितेंद्र हितेश से छोटा है। चारों में कौन बड़ा है?",
+          "gold": "लोकेश",
+          "predicted": "भरत",
+          "generated": "भरत",
+          "category": "chain3_superlative"
+        },
+        {
+          "text": "जितेंद्र की तुलना में उमेश बड़ा है। भरत की तुलना में उमेश छोटा है। भरत की तुलना में लोकेश बड़ा है। दूसरा सबसे छोटा कौन है?",
+          "gold": "उमेश",
+          "predicted": "भरत",
+          "generated": "भरत",
+          "category": "chain3_superlative"
+        }
+      ],
+      "exact_match": 0.2,
+      "generation_invalid_rate": 0.0,
+      "exact_match_by_hops": {
+        "1": 0.4,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "description": "new names + numbers, seen templates"
+    },
+    "test_b": {
+      "n": 10,
+      "accuracy": 0.6,
+      "majority_position_baseline": 0.5,
+      "by_category": {
+        "chain2_relation": 0.0,
+        "chain3_relation": 1.0,
+        "direct_comparison": 0.0,
+        "mixed_relation": 0.75,
+        "numeric_comparison": 1.0,
+        "three_entity_ordering": 0.5
+      },
+      "by_hops": {
+        "1": 0.625,
+        "2": 0.0,
+        "3": 1.0
+      },
+      "by_answer_position": {
+        "0": 0.0,
+        "1": 1.0,
+        "2": 0.3333
+      },
+      "errors": [
+        {
+          "text": "योगेश की उम्र 79 वर्ष, लोकेश की उम्र 50 वर्ष, उमेश की उम्र 61 वर्ष। सबसे छोटा कौन है?",
+          "gold": "लोकेश",
+          "predicted": "उमेश",
+          "generated": "दिनेश",
+          "category": "three_entity_ordering"
+        },
+        {
+          "text": "लोकेश का कद 42 सेंटीमीटर बताई गई है और योगेश का कद 70 सेंटीमीटर। दोनों में कौन छोटा है?",
+          "gold": "लोकेश",
+          "predicted": "योगेश",
+          "generated": "योगेश",
+          "category": "direct_comparison"
+        },
+        {
+          "text": "जितेंद्र का कद 65 सेंटीमीटर बताई गई है और लोकेश का कद 65 सेंटीमीटर। इनके कद की तुलना क्या है?",
+          "gold": "बराबर",
+          "predicted": "लोकेश",
+          "generated": "लोकेश",
+          "category": "mixed_relation"
+        },
+        {
+          "text": "जानकारी: जितेंद्र की तुलना में योगेश छोटा; योगेश उमेश से बड़ा। उमेश और जितेंद्र में कौन छोटा है?",
+          "gold": "उमेश",
+          "predicted": "जितेंद्र",
+          "generated": "जितेंद्र",
+          "category": "chain2_relation"
+        }
+      ],
+      "exact_match": 0.6,
+      "generation_invalid_rate": 0.1,
+      "exact_match_by_hops": {
+        "1": 0.625,
+        "2": 0.0,
+        "3": 1.0
+      },
+      "description": "new names + numbers + templates"
+    },
+    "test_c": {
+      "n": 10,
+      "accuracy": 0.7,
+      "majority_position_baseline": 0.8,
+      "by_category": {
+        "chain2_relation": 1.0,
+        "chain3_relation": 0.0,
+        "chain3_superlative": 0.0,
+        "direct_comparison": 0.6667,
+        "mixed_relation": 1.0,
+        "numeric_comparison": 1.0,
+        "ranking": 1.0
+      },
+      "by_hops": {
+        "1": 0.8571,
+        "2": 1.0,
+        "3": 0.0
+      },
+      "by_answer_position": {
+        "0": 0.0,
+        "1": 0.875
+      },
+      "errors": [
+        {
+          "text": "जानकारी: हितेश उमेश से छोटा; उमेश भरत से छोटा; जितेंद्र की तुलना में हितेश बड़ा। सबसे छोटा कौन है?",
+          "gold": "जितेंद्र",
+          "predicted": "हितेश",
+          "generated": "दिनेश",
+          "category": "chain3_superlative"
+        },
+        {
+          "text": "लोकेश का कद 11 सेंटीमीटर बताई गई है और उमेश का कद 26 सेंटीमीटर। इनमें कौन छोटा है?",
+          "gold": "लोकेश",
+          "predicted": "उमेश",
+          "generated": "उमेश",
+          "category": "direct_comparison"
+        },
+        {
+          "text": "जानकारी: लोकेश जितेंद्र से छोटा; योगेश की तुलना में भरत छोटा; लोकेश योगेश से लंबा। लोकेश और भरत की तुलना में कौन लंबा है?",
+          "gold": "लोकेश",
+          "predicted": "भरत",
+          "generated": "भरत",
+          "category": "chain3_relation"
+        }
+      ],
+      "exact_match": 0.6,
+      "generation_invalid_rate": 0.2,
+      "exact_match_by_hops": {
+        "1": 0.7143,
+        "2": 1.0,
+        "3": 0.0
+      },
+      "description": "new names + templates, seen numbers"
+    }
+  }
+}

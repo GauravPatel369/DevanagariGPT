@@ -1,0 +1,178 @@
+# Model H — Hindi. Data sources for Phase 1.
+#
+# Language justification (report §1.1): Hindi is the highest-resource
+# non-English Indian language by public text volume — the largest Devanagari
+# Wikipedia, the biggest slices in IndicCorp v2 / Sangraha / CulturaX, and a
+# large online news industry with deep, sitemap-exposed archives. That makes the
+# ~500M-token target reachable and gives a genuine contrast against Model L.
+
+language: hindi
+lang_code: hi
+rps_per_domain: 1.5
+
+# --- Crawl priority -----------------------------------------------------------
+# ALL domains are crawled simultaneously — separate hosts do not contend, so
+# idling any of them only wastes wall clock.
+#
+# This list controls each domain's SHARE of every round, not its turn: a
+# top-category domain is claimed --priority-boost times deeper per round than a
+# news one. The frontier holds ~493k pending Hindi URLs, nearly all of them on
+# already-saturated news domains (amarujala alone is 47% of the corpus), so
+# without weighting the new registers would be a rounding error in the result.
+category_priority:
+  - sports
+  - current_affairs
+  - magazine
+  - education
+  - poetry
+  - literature
+  - encyclopedia
+  - news
+
+# --- Manual collection (>=20% of final training tokens) -----------------------
+# Budget: ~900 tokens/article, ~65% survive cleaning+dedup
+#   -> ~170k fetched URLs for ~100M manual tokens.
+# Probe each domain before committing (scripts/probe_domains.py); replace any
+# that fail robots.txt, block bots, or return <0.7 extraction rate.
+# `category` is metadata only — no pipeline stage reads it. It exists so the
+# register-mix table in report/phase1.md §3.1 can be generated from the config
+# instead of being maintained by hand.
+manual_sites:
+  - name: bbc_hindi          # cleanest markup, proofread text, stable URLs
+    domain: www.bbc.com
+    root: https://www.bbc.com/hindi
+    category: news
+  - name: jagran
+    domain: www.jagran.com
+    root: https://www.jagran.com
+    category: news
+  - name: amarujala
+    domain: www.amarujala.com
+    root: https://www.amarujala.com
+    category: news
+  - name: navbharattimes
+    domain: navbharattimes.indiatimes.com
+    root: https://navbharattimes.indiatimes.com
+    category: news
+  - name: livehindustan
+    domain: www.livehindustan.com
+    root: https://www.livehindustan.com
+    category: news
+  # Non-news register diversity: a news-only corpus produces a model that can
+  # only write news, which shows up in Phase-2 generation samples.
+  - name: wikisource_hi      # public-domain literary prose (Premchand etc.)
+    domain: hi.wikisource.org
+    root: https://hi.wikisource.org
+    category: literature
+  - name: wikipedia_hi       # Devanagari Hindi encyclopedia articles via MediaWiki API
+    domain: hi.wikipedia.org
+    root: https://hi.wikipedia.org
+    category: encyclopedia
+  - name: kavitakosh
+    domain: www.kavitakosh.org
+    root: http://www.kavitakosh.org
+    category: poetry
+
+  # ---------------------------------------------------------------------------
+  # Register expansion: current affairs, sports, education, magazine.
+  #
+  # UNVALIDATED. Run `python scripts/probe_domains.py --lang hindi` and delete
+  # every entry whose extract_rate is poor or whose discovered_urls is tiny
+  # before starting a crawl. Each of these is a guess about sitemap layout and
+  # markup that only the probe can settle.
+  #
+  # Every `domain` below is absent from the list above on purpose: cli.py builds
+  # source_of as {domain: name}, so two entries sharing a domain silently
+  # collapse into one source label (this is the wikisource_ne / nepali_kitab bug
+  # in the Nepali config). Add a sub-section of an existing site by widening its
+  # existing entry's root, never by adding a second entry for the same domain.
+  # ---------------------------------------------------------------------------
+
+  # --- current affairs: analysis and long-form, distinct from daily news ---
+  - name: thewirehindi
+    domain: thewirehindi.com
+    root: https://thewirehindi.com
+    category: current_affairs
+  - name: satyagrah
+    domain: satyagrah.scroll.in
+    root: https://satyagrah.scroll.in
+    category: current_affairs
+  - name: newslaundry_hi
+    domain: hindi.newslaundry.com
+    root: https://hindi.newslaundry.com
+    category: current_affairs
+  - name: aajtak
+    domain: www.aajtak.in
+    root: https://www.aajtak.in
+    category: current_affairs
+
+  # --- sports: match reports and commentary; a register news alone misses ---
+  - name: cricbuzz_hi
+    domain: hindi.cricbuzz.com
+    root: https://hindi.cricbuzz.com
+    category: sports
+  - name: sportskeeda_hi
+    domain: hindi.sportskeeda.com
+    root: https://hindi.sportskeeda.com
+    category: sports
+  - name: khelnow_hi
+    domain: khelnow.com
+    root: https://khelnow.com/hindi
+    category: sports
+
+  # --- education: expository prose, the register closest to Phase-3 reasoning ---
+  - name: wikibooks_hi      # MediaWiki: discover_mediawiki + Action API already handle it
+    domain: hi.wikibooks.org
+    root: https://hi.wikibooks.org
+    category: education
+  - name: jagranjosh
+    domain: www.jagranjosh.com
+    root: https://www.jagranjosh.com
+    category: education
+  - name: hindisamay        # MGAHV literature and criticism portal
+    domain: www.hindisamay.com
+    root: http://www.hindisamay.com
+    category: education
+
+  # --- magazine: long-form features and essays ---
+  - name: thelallantop
+    domain: www.thelallantop.com
+    root: https://www.thelallantop.com
+    category: magazine
+  - name: hindwi           # Rekhta's Hindi literature archive
+    domain: www.hindwi.org
+    root: https://www.hindwi.org
+    category: magazine
+  - name: forwardpress
+    domain: www.forwardpress.in
+    root: https://www.forwardpress.in
+    category: magazine
+  - name: outlookhindi
+    domain: www.outlookhindi.com
+    root: https://www.outlookhindi.com
+    category: magazine
+
+
+# --- Downloaded corpora -------------------------------------------------------
+# Permitted explicitly by the project ("You may use public corpora (e.g. Hugging
+# Face)"). Forbidden are pretrained MODELS and TOKENIZERS, not datasets.
+# CC-100 / mC4 / CulturaX / OSCAR are all Common Crawl derivatives and overlap
+# heavily — stage 6 dedup, not the advertised sizes, determines real volume.
+hf_sources:
+  - name: sangraha
+    repo: ai4bharat/sangraha
+    config: verified
+    split: hin
+    text_key: text
+    max_docs: 1200000          # ~220M tokens (Sangraha verified Hindi Devanagari)
+  - name: indiccorp_v2
+    repo: ai4bharat/IndicCorpV2
+    config: indiccorp_v2
+    split: hin_Deva
+    text_key: text
+    max_docs: 1200000          # ~200M tokens (IndicCorp v2 Hindi open web slice)
+  # - name: culturax_hi (commented out because it is a gated dataset on HF Hub)
+  # - name: wikipedia_hi (wikipedia is already fetched via MediaWiki API in manual crawl)
+
+
+

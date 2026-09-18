@@ -1,0 +1,52 @@
+[
+  {
+    "model_name": "hindi_bpe_16000.model",
+    "vocab_size": 16000,
+    "total_words": 440972,
+    "total_chars": 2236373,
+    "total_tokens": 557498,
+    "fertility": 1.26,
+    "compression": 4.01,
+    "unk_count": 0,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1874,
+    "byte_fallback_rate": 0.3361,
+    "sample_byte_tokens": [
+      "<0x0A>",
+      "<0x0A>",
+      "<0x0A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>"
+    ]
+  },
+  {
+    "model_name": "hi_unigram_16000.model",
+    "vocab_size": 16000,
+    "total_words": 440972,
+    "total_chars": 2236373,
+    "total_tokens": 551358,
+    "fertility": 1.25,
+    "compression": 4.06,
+    "unk_count": 0,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1874,
+    "byte_fallback_rate": 0.3399,
+    "sample_byte_tokens": [
+      "<0x0A>",
+      "<0x0A>",
+      "<0x0A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>",
+      "<0x2A>"
+    ]
+  }
+]

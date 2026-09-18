@@ -1,0 +1,33 @@
+{
+  "language": "nepali",
+  "split": "test_b",
+  "n": 600,
+  "endings": [
+    "भन्दा",
+    "सँग",
+    "लाई",
+    "को",
+    "ले",
+    "मा"
+  ],
+  "models": {
+    "pretrained": {
+      "step": 27500,
+      "strict": 0.04,
+      "with_ending": 0.0967,
+      "names_a_candidate_with_ending": 0.265
+    },
+    "plain": {
+      "step": 312,
+      "strict": 0.065,
+      "with_ending": 0.1067,
+      "names_a_candidate_with_ending": 0.2
+    },
+    "final": {
+      "step": 312,
+      "strict": 0.1,
+      "with_ending": 0.2683,
+      "names_a_candidate_with_ending": 0.5517
+    }
+  }
+}

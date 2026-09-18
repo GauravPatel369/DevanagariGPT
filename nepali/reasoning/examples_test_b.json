@@ -1,0 +1,3341 @@
+[
+  {
+    "text": "यदि उमेशको उमेर 63 वर्ष छ र बिकासको उमेर 72 वर्ष छ भने, दुवैमध्ये को ठूलो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "उमेश",
+      "बिकास",
+      "बराबर"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिरेन्द्रको"
+  },
+  {
+    "text": "किताबको भाउ 48 रुपैयाँ छ र झोलाको भाउ 47 रुपैयाँ छ। कुन सस्तो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "झोला",
+    "candidates": [
+      "किताब",
+      "झोला"
+    ],
+    "pretrained_choice": "किताब",
+    "pretrained_generated": "10",
+    "baseline_choice": "किताब",
+    "baseline_generated": "किताब",
+    "final_choice": "किताब",
+    "final_generated": "किताब"
+  },
+  {
+    "text": "योगेशको उमेर 79 वर्ष, सुमनको उमेर 50 वर्ष, नरेन्द्रको उमेर 61 वर्ष। सबैभन्दा सानो को छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "अशोक",
+    "final_choice": "योगेश",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "सुमनको उमेर 43 वर्ष भनिएको छ, योगेशको उमेर 90 वर्ष भनिएको छ। यीमध्ये को ठूलो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "सुमन",
+      "योगेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमन",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "सुमनको उचाइ 42 सेन्टिमिटर भनिएको छ, योगेशको उचाइ 70 सेन्टिमिटर भनिएको छ। दुवैमध्ये को होचो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "सुमन",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमन",
+    "final_choice": "सुमन",
+    "final_generated": "सुमन"
+  },
+  {
+    "text": "नरेन्द्रको उमेर 73 वर्ष भनिएको छ, बिकासको उमेर 76 वर्ष भनिएको छ। यीमध्ये को ठूलो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "नरेन्द्र",
+      "बिकास",
+      "बराबर"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिकासको"
+  },
+  {
+    "text": "योगेशको उमेर 62 वर्ष, लोकेशको उमेर 66 वर्ष, बिकासको उमेर 56 वर्ष। तीनैमध्ये को ठूलो छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "बिकास",
+      "योगेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "बिकास",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "लोकेशको उचाइ 65 सेन्टिमिटर भनिएको छ, सुमनको उचाइ 65 सेन्टिमिटर भनिएको छ। यिनको उचाइको तुलना कस्तो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बराबर",
+    "candidates": [
+      "लोकेश",
+      "सुमन",
+      "बराबर"
+    ],
+    "pretrained_choice": "सुमन",
+    "pretrained_generated": "सुमनको",
+    "baseline_choice": "बराबर",
+    "baseline_generated": "बराबर",
+    "final_choice": "बराबर",
+    "final_generated": "बराबर"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि लोकेश नरेन्द्रभन्दा सानो छ, बिकासको तुलनामा लोकेश ठूलो छ, र योगेश नरेन्द्रभन्दा ठूलो छ। योगेश र बिकास मध्ये को सानो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "लोकेश",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "जानकारी: लोकेशको तुलनामा योगेश सानो; योगेश नरेन्द्रभन्दा ठूलो। नरेन्द्र र लोकेश मध्ये को सानो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "लोकेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "गोकुलेश्वर"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि बिकासको तुलनामा लोकेश होचो छ, नरेन्द्रको तुलनामा सुमन होचो छ, र नरेन्द्रको तुलनामा लोकेश अग्लो छ। चारैमध्ये दोस्रो सबैभन्दा अग्लो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "बिकास",
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "1000",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "नरेन्द्रको"
+  },
+  {
+    "text": "सूचीमा उमेशको उमेर 65 वर्ष, नरेन्द्रको उमेर 78 वर्ष र बिकासको उमेर 90 वर्ष छ। दोस्रो स्थानमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र",
+      "बिकास"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "बिनोद"
+  },
+  {
+    "text": "उमेशको उचाइ 67 सेन्टिमिटर पाइयो, लोकेशको उचाइ 82 सेन्टिमिटर पाइयो। दुवैमध्ये को अग्लो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "उमेश",
+      "लोकेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "को",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "दिइएको छ: सुमनको तुलनामा योगेश सानो छ; योगेशको तुलनामा उमेश सानो छ। उमेश र सुमन मध्ये को ठूलो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "सुमन",
+    "pretrained_generated": "सुमनको",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "योगेशको उमेर 78 वर्ष उल्लेख छ, उमेशको 83 वर्ष र बिकासको 81 वर्ष। तीनैमध्ये को सानो छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "बिकास",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "लोकेशको उचाइ 52 सेन्टिमिटर पाइयो, सुमनको उचाइ 61 सेन्टिमिटर पाइयो। यीमध्ये को अग्लो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "लोकेश",
+      "सुमन",
+      "बराबर"
+    ],
+    "pretrained_choice": "सुमन",
+    "pretrained_generated": "को",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि बिकासको तुलनामा योगेश अग्लो छ, र नरेन्द्र बिकासभन्दा होचो छ। नरेन्द्र र योगेशको तुलनामा को होचो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "योगेशको",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "जानकारी: बिकास नरेन्द्रभन्दा ठूलो; नरेन्द्रको तुलनामा सुमन सानो। बिकास र सुमन मध्ये को ठूलो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "सुमन"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "बिकास",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुनिल",
+    "final_choice": "सुमन",
+    "final_generated": "बिगत"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि लोकेशको तुलनामा नरेन्द्र ठूलो छ, र लोकेशको तुलनामा योगेश सानो छ। सबैभन्दा ठूलो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "यदि योगेशको उमेर 74 वर्ष छ र नरेन्द्रको उमेर 53 वर्ष छ भने, दुवैमध्ये को ठूलो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "गोकुल"
+  },
+  {
+    "text": "दिइएको छ: सुमनको तुलनामा उमेश होचो छ; योगेशको तुलनामा उमेश अग्लो छ। तीनैमध्ये को अग्लो छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "सुमन",
+      "उमेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "उमेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "सुरेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "यदि योगेशको उचाइ 49 सेन्टिमिटर छ र सुमनको उचाइ 59 सेन्टिमिटर छ भने, यीमध्ये को अग्लो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "योगेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "जानकारी: लोकेश बिकासभन्दा ठूलो; योगेश लोकेशभन्दा ठूलो। बिकास र योगेश मध्ये को सानो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "दिइएको छ: सुमन योगेशभन्दा ठूलो छ; नरेन्द्र योगेशभन्दा सानो छ; बिकास सुमनभन्दा ठूलो छ। सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "सुमन",
+      "बिकास",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "‘अर्को�",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "योगेश",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "दिइएको छ: बिकास योगेशभन्दा अग्लो छ; नरेन्द्रको तुलनामा बिकास होचो छ। सबैभन्दा होचो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "नरेन्द्र",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "बिकासको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिनोद"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि बिकास उमेशभन्दा अग्लो छ, र सुमनको तुलनामा उमेश अग्लो छ। बिकास र सुमनको तुलनामा को अग्लो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "सुमन"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "1000",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि सुमन योगेशभन्दा होचो छ, र बिकास सुमनभन्दा होचो छ। सबैभन्दा अग्लो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "सुमन",
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "सुमन",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमन",
+    "final_choice": "सुमन",
+    "final_generated": "र"
+  },
+  {
+    "text": "सूचीमा योगेशको उमेर 84 वर्ष, नरेन्द्रको उमेर 47 वर्ष र सुमनको उमेर 54 वर्ष छ। माझमा को पर्छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "योगेश",
+      "नरेन्द्र",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "अशोक",
+    "final_choice": "सुमन",
+    "final_generated": "केशवको"
+  },
+  {
+    "text": "यदि उमेशको उचाइ 73 सेन्टिमिटर छ र नरेन्द्रको उचाइ 57 सेन्टिमिटर छ भने, अग्लो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "100",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "अशोकको",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "नरेन्द्रको"
+  },
+  {
+    "text": "उमेशको उचाइ 65 सेन्टिमिटर उल्लेख छ, सुमनको 86 सेन्टिमिटर र बिकासको 60 सेन्टिमिटर। सबैभन्दा अग्लो को छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "उमेश",
+      "सुमन",
+      "बिकास"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिक्रम"
+  },
+  {
+    "text": "टेबुलको भाउ 85 रुपैयाँ छ र साइकलको भाउ 87 रुपैयाँ छ। दुवैमध्ये कुन सस्तो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "टेबुल",
+    "candidates": [
+      "टेबुल",
+      "साइकल"
+    ],
+    "pretrained_choice": "साइकल",
+    "pretrained_generated": "10",
+    "baseline_choice": "टेबुल",
+    "baseline_generated": "टेबुलको",
+    "final_choice": "टेबुल",
+    "final_generated": "टेबुलको"
+  },
+  {
+    "text": "बिकासको उचाइ 85 सेन्टिमिटर पाइयो, योगेशको उचाइ 85 सेन्टिमिटर पाइयो। दुवैको उचाइ बीच के सम्बन्ध छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बराबर",
+    "candidates": [
+      "बिकास",
+      "योगेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "बराबर",
+    "baseline_generated": "बराबर",
+    "final_choice": "बराबर",
+    "final_generated": "बराबर"
+  },
+  {
+    "text": "यदि सुमनको उचाइ 49 सेन्टिमिटर छ र नरेन्द्रको उचाइ 48 सेन्टिमिटर छ भने, दुवैमध्ये को होचो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "सुमन",
+      "नरेन्द्र",
+      "बराबर"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "100",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "अशोक",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "नरेन्द्रको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि बिकासको तुलनामा लोकेश ठूलो छ, बिकासको तुलनामा उमेश सानो छ, र योगेशको तुलनामा उमेश ठूलो छ। सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "लोकेश",
+    "candidates": [
+      "उमेश",
+      "योगेश",
+      "बिकास",
+      "लोकेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "उमेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेशको तुलनामा नरेन्द्र होचो छ, र उमेश योगेशभन्दा अग्लो छ। उमेश र नरेन्द्रको तुलनामा को होचो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेशको तुलनामा लोकेश अग्लो छ, योगेशको तुलनामा सुमन होचो छ, र लोकेशको तुलनामा बिकास अग्लो छ। योगेश र बिकासको तुलनामा को अग्लो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "बिकास",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "दिइएको छ: बिकासको तुलनामा लोकेश सानो छ; लोकेश योगेशभन्दा ठूलो छ; सुमनको तुलनामा बिकास सानो छ। सुमन र योगेशको तुलनामा को ठूलो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "सुमन",
+    "candidates": [
+      "सुमन",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमन",
+    "final_choice": "योगेश",
+    "final_generated": "योगेश"
+  },
+  {
+    "text": "सूचीमा योगेशको उमेर 82 वर्ष, उमेशको उमेर 46 वर्ष र बिकासको उमेर 55 वर्ष छ। सबैभन्दा सानो को हो?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "राजनराजुली"
+  },
+  {
+    "text": "यदि योगेशको उमेर 88 वर्ष छ र उमेशको उमेर 66 वर्ष छ भने, दुवैमध्ये को ठूलो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "उमेश",
+    "final_generated": "राजनराजको"
+  },
+  {
+    "text": "दिइएको छ: बिकासको तुलनामा सुमन ठूलो छ; सुमन नरेन्द्रभन्दा सानो छ। सबैभन्दा सानो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "बिकास",
+    "candidates": [
+      "नरेन्द्र",
+      "बिकास",
+      "सुमन"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "सुमन",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "सूचीमा बिकासको उचाइ 75 सेन्टिमिटर, नरेन्द्रको उचाइ 44 सेन्टिमिटर र योगेशको उचाइ 48 सेन्टिमिटर छ। तीनैमध्ये को होचो छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "बिकास",
+      "नरेन्द्र",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "को",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "किताबको भाउ 76 रुपैयाँ छ र घडीको भाउ 72 रुपैयाँ छ। यीमध्ये कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "किताब",
+    "candidates": [
+      "किताब",
+      "घडी"
+    ],
+    "pretrained_choice": "घडी",
+    "pretrained_generated": "10",
+    "baseline_choice": "घडी",
+    "baseline_generated": "घडी",
+    "final_choice": "किताब",
+    "final_generated": "किताब"
+  },
+  {
+    "text": "दिइएको छ: योगेशको तुलनामा उमेश ठूलो छ; योगेशको तुलनामा नरेन्द्र सानो छ। माझमा को पर्छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "नरेन्द्र",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "उमेशको उमेर 51 वर्ष उल्लेख छ, सुमनको 79 वर्ष र योगेशको 80 वर्ष। दोस्रो स्थानमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "उमेश",
+      "सुमन",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दीपक",
+    "final_choice": "सुमन",
+    "final_generated": "प्रमोदको"
+  },
+  {
+    "text": "जानकारी: सुमन लोकेशभन्दा सानो; उमेशको तुलनामा सुमन ठूलो; नरेन्द्र उमेशभन्दा सानो। नरेन्द्र र सुमनको तुलनामा को ठूलो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "सुमन",
+    "candidates": [
+      "नरेन्द्र",
+      "सुमन"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "सुमन",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "सुमन",
+    "final_generated": "सुमन"
+  },
+  {
+    "text": "सुमनको उमेर 82 वर्ष, योगेशको उमेर 71 वर्ष, बिकासको उमेर 42 वर्ष। दोस्रो स्थानमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "बिकास",
+      "सुमन",
+      "योगेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "बिकास",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "जानकारी: लोकेशको तुलनामा योगेश होचो; लोकेशको तुलनामा सुमन अग्लो; बिकास योगेशभन्दा होचो। चारैमध्ये दोस्रो सबैभन्दा होचो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "योगेश",
+    "candidates": [
+      "सुमन",
+      "बिकास",
+      "लोकेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "दिइएको छ: उमेशको तुलनामा बिकास होचो छ; बिकासको तुलनामा सुमन होचो छ; सुमन योगेशभन्दा अग्लो छ। बिकास र योगेशको तुलनामा को होचो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "योगेश",
+    "candidates": [
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "“मलाई",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजको"
+  },
+  {
+    "text": "दिइएको छ: बिकास उमेशभन्दा अग्लो छ; लोकेश उमेशभन्दा होचो छ; लोकेशको तुलनामा नरेन्द्र होचो छ। उमेश र नरेन्द्र मध्ये को होचो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "गोपाल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "जानकारी: योगेशको तुलनामा सुमन होचो; उमेश योगेशभन्दा अग्लो; लोकेशको तुलनामा उमेश होचो। उमेश र सुमनको तुलनामा को होचो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "सुमन",
+    "candidates": [
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "दीपक",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि सुमन योगेशभन्दा सानो छ, बिकास लोकेशभन्दा ठूलो छ, र सुमन बिकासभन्दा ठूलो छ। सबैभन्दा सानो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "लोकेश",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "सुमन",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "सुमन",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुनिल",
+    "final_choice": "सुमन",
+    "final_generated": "सुमन"
+  },
+  {
+    "text": "सूचीमा योगेशको उमेर 54 वर्ष, बिकासको उमेर 78 वर्ष र उमेशको उमेर 70 वर्ष छ। तीनैमध्ये को सानो छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "बिकास",
+      "उमेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "उमेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "योगेशको उचाइ 44 सेन्टिमिटर पाइयो, लोकेशको उचाइ 46 सेन्टिमिटर पाइयो। अग्लो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "योगेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "लोकेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "दिइएको छ: लोकेश उमेशभन्दा ठूलो छ; उमेशको तुलनामा योगेश सानो छ; लोकेश सुमनभन्दा सानो छ। सुमन र उमेश मध्ये को सानो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "उमेश",
+    "candidates": [
+      "सुमन",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "लोकेश",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशको"
+  },
+  {
+    "text": "बिकासको उचाइ 59 सेन्टिमिटर भनिएको छ, उमेशको उचाइ 53 सेन्टिमिटर भनिएको छ। यीमध्ये को अग्लो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "उमेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "उमेशको",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशको"
+  },
+  {
+    "text": "लोकेशको उचाइ 62 सेन्टिमिटर भनिएको छ, बिकासको उचाइ 51 सेन्टिमिटर भनिएको छ। यीमध्ये को अग्लो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "1",
+    "baseline_choice": "बिकास",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "जानकारी: योगेशको तुलनामा उमेश ठूलो; उमेश लोकेशभन्दा सानो। सबैभन्दा सानो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "उमेश",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "सुमनसँग 46 वटा मेच पाइयो, नरेन्द्रसँग 84 वटा मेच। यीमध्ये को बढी छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "100",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "सुमन",
+    "final_generated": "सुमन"
+  },
+  {
+    "text": "दिइएको छ: सुमन बिकासभन्दा ठूलो छ; बिकासको तुलनामा लोकेश सानो छ। लोकेश र सुमनको तुलनामा को सानो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "सुमन",
+    "pretrained_generated": "“मलाई",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दिपेश",
+    "final_choice": "सुमन",
+    "final_generated": "सुमन"
+  },
+  {
+    "text": "जानकारी: नरेन्द्र योगेशभन्दा ठूलो; उमेशको तुलनामा नरेन्द्र सानो। उमेश र योगेशको तुलनामा को ठूलो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "लोकेशको उमेर 67 वर्ष उल्लेख छ, सुमनको 71 वर्ष र नरेन्द्रको 50 वर्ष। दोस्रो स्थानमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुरेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "केशवराज"
+  },
+  {
+    "text": "उमेशसँग 56 वटा जुत्ता पाइयो, सुमनसँग 90 वटा जुत्ता। दुवैमध्ये को कम छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "100",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनसँग",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनसँग"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेश उमेशभन्दा होचो छ, योगेशको तुलनामा लोकेश होचो छ, र उमेशको तुलनामा बिकास अग्लो छ। दोस्रो सबैभन्दा होचो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "योगेश",
+    "candidates": [
+      "बिकास",
+      "लोकेश",
+      "योगेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "सूचीमा सुमनको उचाइ 63 सेन्टिमिटर, लोकेशको उचाइ 89 सेन्टिमिटर र उमेशको उचाइ 56 सेन्टिमिटर छ। तीनैमध्ये को होचो छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "सुमन",
+      "लोकेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "यदि सुमनको उमेर 69 वर्ष छ र बिकासको उमेर 85 वर्ष छ भने, यीमध्ये को सानो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "सुमन",
+      "बिकास",
+      "बराबर"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिकासको"
+  },
+  {
+    "text": "दिइएको छ: बिकास योगेशभन्दा सानो छ; लोकेशको तुलनामा नरेन्द्र ठूलो छ; योगेशको तुलनामा लोकेश ठूलो छ। दोस्रो सबैभन्दा सानो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "बिकास",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "मेचको दाम 80 रुपैयाँ छ भने घडीको दाम 74 रुपैयाँ छ। कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "मेच",
+    "candidates": [
+      "मेच",
+      "घडी"
+    ],
+    "pretrained_choice": "घडी",
+    "pretrained_generated": "घडीको",
+    "baseline_choice": "मेच",
+    "baseline_generated": "मेचको",
+    "final_choice": "मेच",
+    "final_generated": "मेचको"
+  },
+  {
+    "text": "लोकेशसँग 77 वटा किताब पाइयो, उमेशसँग 66 वटा किताब। दुवैमध्ये को बढी छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशसँग"
+  },
+  {
+    "text": "यदि नरेन्द्रको उमेर 67 वर्ष छ र योगेशको उमेर 61 वर्ष छ भने, यीमध्ये को ठूलो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "जानकारी: योगेश सुमनभन्दा अग्लो; लोकेशको तुलनामा योगेश होचो। तीनैमध्ये को होचो छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "दीपक",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "दिइएको छ: उमेश लोकेशभन्दा सानो छ; सुमन उमेशभन्दा सानो छ। माझमा को पर्छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "उमेश",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "उमेश"
+  },
+  {
+    "text": "बिकासको उचाइ 60 सेन्टिमिटर पाइयो, लोकेशको उचाइ 41 सेन्टिमिटर पाइयो। होचो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "बिकास",
+      "लोकेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "लोकेश",
+    "baseline_generated": "दिपेशको",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "सुमनको उचाइ 78 सेन्टिमिटर भनिएको छ, नरेन्द्रको उचाइ 56 सेन्टिमिटर भनिएको छ। यीमध्ये को होचो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "1",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "अशोकको"
+  },
+  {
+    "text": "योगेशको उचाइ 75 सेन्टिमिटर, बिकासको उचाइ 88 सेन्टिमिटर, लोकेशको उचाइ 59 सेन्टिमिटर। क्रममा दोस्रो को हो?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "100",
+    "baseline_choice": "बिकास",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "बिकास",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेश बिकासभन्दा ठूलो छ, उमेश नरेन्द्रभन्दा ठूलो छ, र नरेन्द्रको तुलनामा योगेश सानो छ। चारैमध्ये दोस्रो सबैभन्दा सानो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "योगेश",
+    "candidates": [
+      "नरेन्द्र",
+      "उमेश",
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "बिकासको उचाइ 79 सेन्टिमिटर भनिएको छ, नरेन्द्रको उचाइ 50 सेन्टिमिटर भनिएको छ। होचो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "बिकास",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "नरेन्द्रको",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "बिबिसीको"
+  },
+  {
+    "text": "सूचीमा लोकेशको उचाइ 86 सेन्टिमिटर, उमेशको उचाइ 64 सेन्टिमिटर र नरेन्द्रको उचाइ 72 सेन्टिमिटर छ। माझमा को पर्छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "लोकेश",
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "100",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुरेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "सुरेशको"
+  },
+  {
+    "text": "दिइएको छ: सुमनको तुलनामा उमेश सानो छ; उमेशको तुलनामा नरेन्द्र सानो छ। नरेन्द्र र सुमनको तुलनामा को ठूलो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "नरेन्द्र",
+      "सुमन"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "रोशनको",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेशको तुलनामा लोकेश ठूलो छ, उमेशको तुलनामा योगेश ठूलो छ, र बिकास उमेशभन्दा सानो छ। सबैभन्दा ठूलो को हो?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "उमेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "नरेन्द्रको उमेर 89 वर्ष उल्लेख छ, बिकासको 60 वर्ष र लोकेशको 48 वर्ष। सबैभन्दा ठूलो को छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "बिकास",
+      "लोकेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "राम",
+    "final_choice": "बिकास",
+    "final_generated": "बिनय"
+  },
+  {
+    "text": "सुमनको उमेर 47 वर्ष उल्लेख छ, योगेशको 76 वर्ष र उमेशको 77 वर्ष। बीचमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "सुमन",
+      "योगेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुरेश",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशको"
+  },
+  {
+    "text": "दिइएको छ: नरेन्द्रको तुलनामा बिकास होचो छ; उमेश नरेन्द्रभन्दा अग्लो छ। सबैभन्दा होचो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "राहुलको"
+  },
+  {
+    "text": "दिइएको छ: योगेश उमेशभन्दा सानो छ; उमेश नरेन्द्रभन्दा सानो छ। सबैभन्दा सानो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेश",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "उमेश",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि लोकेशको तुलनामा नरेन्द्र अग्लो छ, र योगेशको तुलनामा लोकेश अग्लो छ। सबैभन्दा अग्लो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "गोपालप्रसाद"
+  },
+  {
+    "text": "सूचीमा सुमनको उचाइ 76 सेन्टिमिटर, योगेशको उचाइ 69 सेन्टिमिटर र नरेन्द्रको उचाइ 55 सेन्टिमिटर छ। तीनैमध्ये को होचो छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "सुमन",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "को",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "अशोक",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "केशवको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेशको तुलनामा बिकास ठूलो छ, नरेन्द्रको तुलनामा उमेश ठूलो छ, र योगेश उमेशभन्दा ठूलो छ। बिकास र उमेश मध्ये को ठूलो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "उमेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "महेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "उमेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "यदि लोकेशको उमेर 55 वर्ष छ र उमेशको उमेर 84 वर्ष छ भने, यीमध्ये को सानो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "-",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशको"
+  },
+  {
+    "text": "जानकारी: बिकासको तुलनामा उमेश अग्लो; बिकासको तुलनामा योगेश होचो। योगेश र उमेशको तुलनामा को होचो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "उमेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "जानकारी: सुमन लोकेशभन्दा होचो; सुमन नरेन्द्रभन्दा अग्लो; लोकेशको तुलनामा योगेश अग्लो। दोस्रो सबैभन्दा अग्लो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "लोकेश",
+    "candidates": [
+      "नरेन्द्र",
+      "लोकेश",
+      "सुमन",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "सुमन",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि बिकास उमेशभन्दा सानो छ, र बिकास नरेन्द्रभन्दा ठूलो छ। नरेन्द्र र उमेशको तुलनामा को सानो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "उमेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "विकास",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "र"
+  },
+  {
+    "text": "दिइएको छ: योगेश लोकेशभन्दा होचो छ; लोकेश उमेशभन्दा होचो छ। बीचमा को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "लोकेश",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेश",
+    "baseline_choice": "लोकेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेश"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि बिकासको तुलनामा योगेश होचो छ, सुमन बिकासभन्दा अग्लो छ, र सुमनको तुलनामा नरेन्द्र अग्लो छ। चारैमध्ये दोस्रो सबैभन्दा होचो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "सुमन",
+      "नरेन्द्र",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुनिल",
+    "final_choice": "सुमन",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "नरेन्द्रको उमेर 64 वर्ष, बिकासको उमेर 44 वर्ष, उमेशको उमेर 43 वर्ष। बीचमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र",
+      "बिकास"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "बिकास",
+    "final_generated": "बिनय"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि बिकास उमेशभन्दा सानो छ, र लोकेशको तुलनामा बिकास ठूलो छ। उमेश र लोकेश मध्ये को ठूलो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "लोकेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेश"
+  },
+  {
+    "text": "जानकारी: बिकासको तुलनामा उमेश होचो; उमेश नरेन्द्रभन्दा अग्लो; योगेशको तुलनामा बिकास होचो। योगेश र नरेन्द्रको तुलनामा को होचो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि लोकेशको तुलनामा योगेश होचो छ, उमेश योगेशभन्दा होचो छ, र सुमनको तुलनामा लोकेश होचो छ। उमेश र सुमनको तुलनामा को अग्लो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "सुमन",
+    "candidates": [
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "गोपाल",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि नरेन्द्र योगेशभन्दा होचो छ, सुमनको तुलनामा लोकेश होचो छ, र सुमनको तुलनामा नरेन्द्र अग्लो छ। चारैमध्ये दोस्रो सबैभन्दा अग्लो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "योगेश",
+      "नरेन्द्र",
+      "सुमन",
+      "लोकेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्र",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुनिल",
+    "final_choice": "सुमन",
+    "final_generated": "रचना"
+  },
+  {
+    "text": "टेबुलको दाम 41 रुपैयाँ छ भने किताबको दाम 42 रुपैयाँ छ। दुवैमध्ये कुन सस्तो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "टेबुल",
+    "candidates": [
+      "टेबुल",
+      "किताब"
+    ],
+    "pretrained_choice": "किताब",
+    "pretrained_generated": "10",
+    "baseline_choice": "टेबुल",
+    "baseline_generated": "टेबुल",
+    "final_choice": "टेबुल",
+    "final_generated": "टेबुलको"
+  },
+  {
+    "text": "उमेशको उचाइ 64 सेन्टिमिटर, लोकेशको उचाइ 74 सेन्टिमिटर, योगेशको उचाइ 72 सेन्टिमिटर। बीचमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "100",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "नरेन्द्रको उमेर 48 वर्ष उल्लेख छ, योगेशको 45 वर्ष र बिकासको 84 वर्ष। सबैभन्दा सानो को छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिनोद"
+  },
+  {
+    "text": "जानकारी: लोकेशको तुलनामा सुमन होचो; योगेशको तुलनामा लोकेश होचो; बिकासको तुलनामा योगेश होचो। चारैमध्ये को अग्लो छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "सुमन",
+      "योगेश",
+      "लोकेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "उमेशको उमेर 53 वर्ष पाइयो, नरेन्द्रको उमेर 70 वर्ष पाइयो। ठूलो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "नरेन्द्रको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि उमेश बिकासभन्दा ठूलो छ, नरेन्द्र बिकासभन्दा सानो छ, र उमेश लोकेशभन्दा सानो छ। चारैमध्ये दोस्रो सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "बिकास",
+      "नरेन्द्र",
+      "लोकेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "उमेश",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "उमेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "सुमनको उचाइ 80 सेन्टिमिटर उल्लेख छ, बिकासको 66 सेन्टिमिटर र योगेशको 50 सेन्टिमिटर। क्रममा दोस्रो को हो?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "सुमन",
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "मनोज",
+    "final_choice": "सुमन",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "जानकारी: उमेशको तुलनामा योगेश होचो; योगेश नरेन्द्रभन्दा अग्लो; नरेन्द्रको तुलनामा लोकेश होचो। उमेश र नरेन्द्र मध्ये को होचो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "उमेशको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "गोपालप्रसाद"
+  },
+  {
+    "text": "जानकारी: नरेन्द्र बिकासभन्दा सानो; नरेन्द्र सुमनभन्दा ठूलो। सबैभन्दा सानो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "नरेन्द्र",
+      "बिकास",
+      "सुमन"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "नरेन्द्र"
+  },
+  {
+    "text": "जानकारी: नरेन्द्रको तुलनामा सुमन होचो; लोकेश नरेन्द्रभन्दा अग्लो। सबैभन्दा होचो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "सुमन",
+      "नरेन्द्र",
+      "लोकेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेश"
+  },
+  {
+    "text": "सुमनसँग 55 वटा झोला पाइयो, लोकेशसँग 71 वटा झोला। बढी को छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "सुमन",
+      "लोकेश"
+    ],
+    "pretrained_choice": "सुमन",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दिपेशसँग",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशसँग"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेशको तुलनामा नरेन्द्र अग्लो छ, र नरेन्द्र सुमनभन्दा होचो छ। सबैभन्दा अग्लो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "यो",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "अशोक",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "केशवको"
+  },
+  {
+    "text": "बजारमा घडी 54 रुपैयाँ र टोपी 88 रुपैयाँमा पाइन्छ। दुवैमध्ये कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "टोपी",
+    "candidates": [
+      "घडी",
+      "टोपी"
+    ],
+    "pretrained_choice": "घडी",
+    "pretrained_generated": "घडी",
+    "baseline_choice": "टोपी",
+    "baseline_generated": "टोपी",
+    "final_choice": "टोपी",
+    "final_generated": "टोपी"
+  },
+  {
+    "text": "सुमनको उचाइ 84 सेन्टिमिटर भनिएको छ, नरेन्द्रको उचाइ 73 सेन्टिमिटर भनिएको छ। दुवैमध्ये को होचो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "1",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "अशोकको"
+  },
+  {
+    "text": "यदि नरेन्द्रको उमेर 69 वर्ष छ र उमेशको उमेर 53 वर्ष छ भने, यीमध्ये को ठूलो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "उमेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "-",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "उमेश",
+    "final_generated": "राहुलको"
+  },
+  {
+    "text": "जानकारी: बिकास लोकेशभन्दा ठूलो; नरेन्द्र उमेशभन्दा सानो; उमेशको तुलनामा लोकेश ठूलो। बिकास र उमेश मध्ये को ठूलो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "उमेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "लोकेश",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "जानकारी: योगेश बिकासभन्दा होचो; सुमन नरेन्द्रभन्दा होचो; योगेश नरेन्द्रभन्दा अग्लो। दोस्रो सबैभन्दा अग्लो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "योगेश",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश",
+      "सुमन",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "योगेश",
+    "final_choice": "योगेश",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "सूचीमा योगेशको उचाइ 69 सेन्टिमिटर, उमेशको उचाइ 58 सेन्टिमिटर र नरेन्द्रको उचाइ 86 सेन्टिमिटर छ। क्रममा दोस्रो को हो?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "केशवको"
+  },
+  {
+    "text": "दिइएको छ: लोकेशको तुलनामा बिकास अग्लो छ; बिकासको तुलनामा सुमन अग्लो छ। सबैभन्दा अग्लो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "सुमन",
+    "candidates": [
+      "सुमन",
+      "बिकास",
+      "लोकेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "1000",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दिपेशको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "दिइएको छ: योगेश नरेन्द्रभन्दा होचो छ; बिकासको तुलनामा नरेन्द्र होचो छ; लोकेशको तुलनामा बिकास होचो छ। योगेश र लोकेशको तुलनामा को अग्लो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "लोकेश",
+    "candidates": [
+      "योगेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेश सुमनभन्दा सानो छ, योगेश उमेशभन्दा ठूलो छ, र बिकासको तुलनामा सुमन सानो छ। योगेश र बिकास मध्ये को ठूलो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "बिकास",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "बिकासको उमेर 67 वर्ष उल्लेख छ, लोकेशको 85 वर्ष र सुमनको 42 वर्ष। दोस्रो स्थानमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "लोकेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दिपेशको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "बजारमा कमिज 83 रुपैयाँ र झोला 45 रुपैयाँमा पाइन्छ। यीमध्ये कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "कमिज",
+    "candidates": [
+      "कमिज",
+      "झोला"
+    ],
+    "pretrained_choice": "झोला",
+    "pretrained_generated": "10",
+    "baseline_choice": "झोला",
+    "baseline_generated": "झोला",
+    "final_choice": "झोला",
+    "final_generated": "झोला"
+  },
+  {
+    "text": "यदि उमेशको उमेर 89 वर्ष छ र सुमनको उमेर 81 वर्ष छ भने, यीमध्ये को सानो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "-",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "सूचीमा बिकासको उमेर 90 वर्ष, सुमनको उमेर 87 वर्ष र योगेशको उमेर 48 वर्ष छ। क्रममा दोस्रो को हो?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "बिकास",
+      "सुमन",
+      "योगेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "योगेश",
+    "final_generated": "केशवको"
+  },
+  {
+    "text": "दिइएको छ: नरेन्द्र उमेशभन्दा होचो छ; उमेशको तुलनामा योगेश अग्लो छ। सबैभन्दा होचो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "उमेश",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्र",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "उमेशको उचाइ 63 सेन्टिमिटर, योगेशको उचाइ 61 सेन्टिमिटर, नरेन्द्रको उचाइ 43 सेन्टिमिटर। सबैभन्दा अग्लो को हो?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "नरेन्द्र",
+      "उमेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "100",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "केशवको"
+  },
+  {
+    "text": "बिकासको उचाइ 88 सेन्टिमिटर पाइयो, सुमनको उचाइ 49 सेन्टिमिटर पाइयो। यीमध्ये को होचो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "बिकास",
+      "सुमन",
+      "बराबर"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "को",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "योगेशको उमेर 45 वर्ष, लोकेशको उमेर 46 वर्ष, सुमनको उमेर 44 वर्ष। बीचमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "सुमन",
+      "योगेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दीपक",
+    "final_choice": "योगेश",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "नरेन्द्रको उमेर 54 वर्ष भनिएको छ, बिकासको उमेर 75 वर्ष भनिएको छ। यीमध्ये को सानो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिकासको"
+  },
+  {
+    "text": "सूचीमा उमेशको उमेर 64 वर्ष, योगेशको उमेर 65 वर्ष र नरेन्द्रको उमेर 43 वर्ष छ। क्रममा दोस्रो को हो?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "केशवको"
+  },
+  {
+    "text": "सूचीमा उमेशको उचाइ 78 सेन्टिमिटर, सुमनको उचाइ 48 सेन्टिमिटर र नरेन्द्रको उचाइ 63 सेन्टिमिटर छ। सबैभन्दा अग्लो को हो?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "100",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "सुमन",
+    "final_generated": "अशोकको"
+  },
+  {
+    "text": "जानकारी: लोकेशको तुलनामा उमेश ठूलो; उमेशको तुलनामा योगेश ठूलो। बीचमा को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "गोपालप्रसाद"
+  },
+  {
+    "text": "दिइएको छ: योगेशको तुलनामा बिकास ठूलो छ; बिकासको तुलनामा नरेन्द्र ठूलो छ; लोकेशको तुलनामा नरेन्द्र सानो छ। चारैमध्ये दोस्रो सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "बिकास",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजको"
+  },
+  {
+    "text": "दिइएको छ: योगेशको तुलनामा सुमन ठूलो छ; बिकासको तुलनामा सुमन सानो छ। बिकास र योगेश मध्ये को सानो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "2015",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "जानकारी: लोकेश सुमनभन्दा सानो; उमेश सुमनभन्दा ठूलो। सबैभन्दा सानो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "लोकेश",
+    "candidates": [
+      "उमेश",
+      "लोकेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "लोकेश",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "सुरेश",
+    "final_choice": "सुमन",
+    "final_generated": "सुमन"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेशको तुलनामा सुमन होचो छ, र लोकेश सुमनभन्दा होचो छ। तीनैमध्ये को अग्लो छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "यो",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेश"
+  },
+  {
+    "text": "टोपीको भाउ 78 रुपैयाँ छ र साइकलको भाउ 61 रुपैयाँ छ। यीमध्ये कुन सस्तो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "साइकल",
+    "candidates": [
+      "टोपी",
+      "साइकल"
+    ],
+    "pretrained_choice": "साइकल",
+    "pretrained_generated": "10",
+    "baseline_choice": "साइकल",
+    "baseline_generated": "साइकलको",
+    "final_choice": "टोपी",
+    "final_generated": "साइकलको"
+  },
+  {
+    "text": "जानकारी: नरेन्द्र बिकासभन्दा ठूलो; बिकासको तुलनामा योगेश सानो; उमेशको तुलनामा योगेश ठूलो। चारैमध्ये दोस्रो सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "बिकास",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजको"
+  },
+  {
+    "text": "योगेशको उमेर 66 वर्ष उल्लेख छ, सुमनको 69 वर्ष र नरेन्द्रको 55 वर्ष। दोस्रो स्थानमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "अशोक",
+    "final_choice": "योगेश",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "नरेन्द्रको उचाइ 46 सेन्टिमिटर पाइयो, बिकासको उचाइ 66 सेन्टिमिटर पाइयो। यीमध्ये को अग्लो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "नरेन्द्र",
+      "बिकास",
+      "बराबर"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "को",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "नरेन्द्र",
+    "final_choice": "बिकास",
+    "final_generated": "बिकासको"
+  },
+  {
+    "text": "दिइएको छ: नरेन्द्रको तुलनामा उमेश होचो छ; बिकासको तुलनामा नरेन्द्र होचो छ। सबैभन्दा होचो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "बिकास",
+      "नरेन्द्र",
+      "उमेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्र",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "बिगत"
+  },
+  {
+    "text": "बजारमा मेच 90 रुपैयाँ र घडी 55 रुपैयाँमा पाइन्छ। कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "मेच",
+    "candidates": [
+      "मेच",
+      "घडी"
+    ],
+    "pretrained_choice": "घडी",
+    "pretrained_generated": "घडी",
+    "baseline_choice": "मेच",
+    "baseline_generated": "मेच",
+    "final_choice": "मेच",
+    "final_generated": "मेच"
+  },
+  {
+    "text": "जानकारी: योगेश नरेन्द्रभन्दा अग्लो; लोकेशको तुलनामा नरेन्द्र अग्लो। सबैभन्दा अग्लो को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "नरेन्द्रको उमेर 51 वर्ष भनिएको छ, योगेशको उमेर 51 वर्ष भनिएको छ। यिनको उमेरको तुलना कस्तो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बराबर",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "बराबर",
+    "baseline_generated": "बराबर",
+    "final_choice": "बराबर",
+    "final_generated": "बराबर"
+  },
+  {
+    "text": "उमेशको उमेर 43 वर्ष भनिएको छ, नरेन्द्रको उमेर 55 वर्ष भनिएको छ। यीमध्ये को ठूलो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "नरेन्द्रको"
+  },
+  {
+    "text": "योगेशको उचाइ 71 सेन्टिमिटर भनिएको छ, लोकेशको उचाइ 71 सेन्टिमिटर भनिएको छ। दुवैको उचाइ बीच के सम्बन्ध छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बराबर",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "बराबर",
+    "baseline_generated": "बराबर",
+    "final_choice": "बराबर",
+    "final_generated": "बराबर"
+  },
+  {
+    "text": "दिइएको छ: लोकेशको तुलनामा बिकास ठूलो छ; बिकास सुमनभन्दा सानो छ। सुमन र लोकेश मध्ये को सानो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "लोकेश",
+    "candidates": [
+      "सुमन",
+      "लोकेश"
+    ],
+    "pretrained_choice": "लोकेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दिपेश",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "जानकारी: योगेशको तुलनामा लोकेश होचो; नरेन्द्रको तुलनामा योगेश होचो। सबैभन्दा अग्लो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "गोकुलेश्वर"
+  },
+  {
+    "text": "सुमनको उचाइ 54 सेन्टिमिटर, योगेशको उचाइ 69 सेन्टिमिटर, उमेशको उचाइ 50 सेन्टिमिटर। क्रममा दोस्रो को हो?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "सुमन",
+    "candidates": [
+      "उमेश",
+      "सुमन",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुरेश",
+    "final_choice": "सुमन",
+    "final_generated": "राजेशको"
+  },
+  {
+    "text": "उमेशको उचाइ 51 सेन्टिमिटर, बिकासको उचाइ 81 सेन्टिमिटर, लोकेशको उचाइ 85 सेन्टिमिटर। माझमा को पर्छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "लोकेश",
+      "उमेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "100",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "बिकास",
+    "final_generated": "बिरेन्द्र"
+  },
+  {
+    "text": "यदि उमेशको उचाइ 64 सेन्टिमिटर छ र सुमनको उचाइ 46 सेन्टिमिटर छ भने, दुवैमध्ये को अग्लो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "सुमन",
+    "final_generated": "सुमनको"
+  },
+  {
+    "text": "योगेशको उमेर 57 वर्ष पाइयो, उमेशको उमेर 86 वर्ष पाइयो। सानो को छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "उमेशको",
+    "final_choice": "योगेश",
+    "final_generated": "योगेश"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि नरेन्द्र उमेशभन्दा अग्लो छ, र लोकेशको तुलनामा नरेन्द्र होचो छ। लोकेश र उमेशको तुलनामा को होचो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "नरेन्द्र",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेश"
+  },
+  {
+    "text": "बजारमा बोतल 67 रुपैयाँ र झोला 69 रुपैयाँमा पाइन्छ। दुवैमध्ये कुन सस्तो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "बोतल",
+    "candidates": [
+      "बोतल",
+      "झोला"
+    ],
+    "pretrained_choice": "बोतल",
+    "pretrained_generated": "100",
+    "baseline_choice": "बोतल",
+    "baseline_generated": "बोतल",
+    "final_choice": "बोतल",
+    "final_generated": "बोतल"
+  },
+  {
+    "text": "किताबको दाम 54 रुपैयाँ छ भने टेबुलको दाम 58 रुपैयाँ छ। दुवैमध्ये कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "टेबुल",
+    "candidates": [
+      "किताब",
+      "टेबुल"
+    ],
+    "pretrained_choice": "किताब",
+    "pretrained_generated": "10",
+    "baseline_choice": "किताब",
+    "baseline_generated": "किताब",
+    "final_choice": "किताब",
+    "final_generated": "किताब"
+  },
+  {
+    "text": "जानकारी: उमेश बिकासभन्दा अग्लो; लोकेश बिकासभन्दा होचो। सबैभन्दा होचो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "लोकेश",
+    "candidates": [
+      "उमेश",
+      "बिकास",
+      "लोकेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "उमेश",
+    "baseline_choice": "लोकेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेश"
+  },
+  {
+    "text": "सूचीमा लोकेशको उमेर 80 वर्ष, बिकासको उमेर 89 वर्ष र उमेशको उमेर 71 वर्ष छ। सबैभन्दा सानो को हो?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "लोकेश",
+      "बिकास",
+      "उमेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "-",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "बजारमा छाता 44 रुपैयाँ र मेच 53 रुपैयाँमा पाइन्छ। दुवैमध्ये कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "मेच",
+    "candidates": [
+      "छाता",
+      "मेच"
+    ],
+    "pretrained_choice": "छाता",
+    "pretrained_generated": "10",
+    "baseline_choice": "मेच",
+    "baseline_generated": "मेच",
+    "final_choice": "मेच",
+    "final_generated": "मेच"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेश लोकेशभन्दा होचो छ, उमेश योगेशभन्दा होचो छ, र सुमनको तुलनामा लोकेश होचो छ। सबैभन्दा होचो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "उमेश",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000000",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "रेशम"
+  },
+  {
+    "text": "दिइएको छ: बिकास लोकेशभन्दा ठूलो छ; योगेशको तुलनामा नरेन्द्र सानो छ; नरेन्द्र बिकासभन्दा ठूलो छ। चारैमध्ये दोस्रो सबैभन्दा सानो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "नरेन्द्र",
+      "बिकास"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "गोकुल"
+  },
+  {
+    "text": "बिकासको उचाइ 68 सेन्टिमिटर पाइयो, लोकेशको उचाइ 66 सेन्टिमिटर पाइयो। दुवैमध्ये को अग्लो छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "लोकेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "को",
+    "baseline_choice": "लोकेश",
+    "baseline_generated": "दिपेशको",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "जानकारी: योगेशको तुलनामा सुमन होचो; लोकेश बिकासभन्दा होचो; लोकेश योगेशभन्दा अग्लो। लोकेश र सुमन मध्ये को होचो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "सुमन",
+    "candidates": [
+      "लोकेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "सुमन",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "दिपेश",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेश"
+  },
+  {
+    "text": "जानकारी: बिकास योगेशभन्दा अग्लो; सुमन योगेशभन्दा होचो। बिकास र सुमनको तुलनामा को अग्लो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "सुमन"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "बिकास",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "सुमन"
+  },
+  {
+    "text": "जानकारी: नरेन्द्रको तुलनामा योगेश ठूलो; नरेन्द्रको तुलनामा उमेश सानो। तीनैमध्ये को सानो छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "नरेन्द्र",
+      "उमेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्रको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "महेश",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "राहुलको"
+  },
+  {
+    "text": "योगेशको उमेर 72 वर्ष पाइयो, बिकासको उमेर 60 वर्ष पाइयो। सानो को छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "योगेश",
+      "बिकास",
+      "बराबर"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "विकास",
+    "baseline_choice": "बिकास",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "नरेन्द्रको उमेर 90 वर्ष भनिएको छ, योगेशको उमेर 58 वर्ष भनिएको छ। दुवैमध्ये को सानो छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "नरेन्द्र",
+      "योगेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "बराबर",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि सुमन योगेशभन्दा होचो छ, र सुमनको तुलनामा बिकास होचो छ। बिकास र योगेशको तुलनामा को अग्लो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "सुमन",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजको"
+  },
+  {
+    "text": "योगेशको उमेर 68 वर्ष उल्लेख छ, लोकेशको 66 वर्ष र सुमनको 55 वर्ष। सबैभन्दा ठूलो को छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुमनको",
+    "final_choice": "सुमन",
+    "final_generated": "केशव"
+  },
+  {
+    "text": "बिकासको उचाइ 58 सेन्टिमिटर उल्लेख छ, उमेशको 82 सेन्टिमिटर र लोकेशको 79 सेन्टिमिटर। सबैभन्दा होचो को हो?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "उमेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "जानकारी: नरेन्द्रको तुलनामा उमेश होचो; बिकासको तुलनामा नरेन्द्र होचो। उमेश र बिकास मध्ये को होचो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "नरेन्द्र",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "सुनिल",
+    "final_choice": "बिकास",
+    "final_generated": "बिकास"
+  },
+  {
+    "text": "यदि उमेशको उमेर 54 वर्ष छ र योगेशको उमेर 90 वर्ष छ भने, सानो को छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "योगेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "गणनामा लोकेशसँग 67 वटा मेच छन्, उमेशसँग 61 वटा मेच। यीमध्ये को कम छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "उमेशसँग",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशसँग"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि नरेन्द्र बिकासभन्दा अग्लो छ, योगेशको तुलनामा लोकेश अग्लो छ, र लोकेश बिकासभन्दा होचो छ। बिकास र योगेश मध्ये को अग्लो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "1000",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "बिष्णु",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "दिइएको छ: उमेश सुमनभन्दा सानो छ; लोकेश उमेशभन्दा सानो छ; बिकास लोकेशभन्दा सानो छ। चारैमध्ये दोस्रो सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "उमेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश",
+      "बिकास",
+      "सुमन"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "उमेश",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "सूचीमा सुमनको उचाइ 60 सेन्टिमिटर, लोकेशको उचाइ 71 सेन्टिमिटर र बिकासको उचाइ 50 सेन्टिमिटर छ। तीनैमध्ये को होचो छ?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "सुमन",
+      "लोकेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "को",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "गोपाल",
+    "final_choice": "बिकास",
+    "final_generated": "सन्दिपको"
+  },
+  {
+    "text": "नरेन्द्रसँग 90 वटा टोपी पाइयो, उमेशसँग 47 वटा टोपी। कम को छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "नरेन्द्र",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "-",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशसँग"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि उमेश सुमनभन्दा सानो छ, नरेन्द्रको तुलनामा योगेश ठूलो छ, र उमेशको तुलनामा योगेश सानो छ। चारैमध्ये दोस्रो सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "नरेन्द्र",
+      "योगेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "उमेश",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "सुनिल",
+    "final_choice": "योगेश",
+    "final_generated": "रियालिटी"
+  },
+  {
+    "text": "जानकारी: लोकेश बिकासभन्दा अग्लो; सुमनको तुलनामा लोकेश होचो; बिकासको तुलनामा योगेश होचो। दोस्रो सबैभन्दा होचो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "लोकेश",
+      "सुमन",
+      "योगेश",
+      "बिकास"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "गणनामा सुमनसँग 51 वटा छाता छन्, उमेशसँग 84 वटा छाता। बढी को छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "सुमन",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "अशोक",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशसँग"
+  },
+  {
+    "text": "दिइएको छ: उमेश बिकासभन्दा अग्लो छ; योगेशको तुलनामा उमेश होचो छ। बिकास र योगेश मध्ये को होचो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "उमेश",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराज"
+  },
+  {
+    "text": "यदि योगेशको उचाइ 77 सेन्टिमिटर छ र उमेशको उचाइ 74 सेन्टिमिटर छ भने, अग्लो को छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "100",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजराजराजराजराजराज"
+  },
+  {
+    "text": "झोलाको भाउ 85 रुपैयाँ छ र मेचको भाउ 52 रुपैयाँ छ। दुवैमध्ये कुन महँगो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "झोला",
+    "candidates": [
+      "झोला",
+      "मेच"
+    ],
+    "pretrained_choice": "झोला",
+    "pretrained_generated": "10",
+    "baseline_choice": "मेच",
+    "baseline_generated": "मेचको",
+    "final_choice": "मेच",
+    "final_generated": "मेचको"
+  },
+  {
+    "text": "यदि उमेशको उचाइ 85 सेन्टिमिटर छ र योगेशको उचाइ 82 सेन्टिमिटर छ भने, अग्लो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "उमेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "100",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "दिइएको छ: योगेश सुमनभन्दा ठूलो छ; उमेशको तुलनामा बिकास सानो छ; बिकास योगेशभन्दा ठूलो छ। दोस्रो सबैभन्दा ठूलो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "उमेश",
+      "सुमन",
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "‘अर्को",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "राजनराजुली"
+  },
+  {
+    "text": "दिइएको छ: बिकास उमेशभन्दा ठूलो छ; नरेन्द्रको तुलनामा लोकेश ठूलो छ; लोकेश उमेशभन्दा सानो छ। नरेन्द्र र उमेशको तुलनामा को सानो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "उमेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "लोकेशको",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "दिइएको छ: योगेशको तुलनामा नरेन्द्र ठूलो छ; उमेशको तुलनामा योगेश ठूलो छ। बीचमा को छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "उमेश",
+      "योगेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेशको",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "दुई जनामध्ये सुमनसँग 76 वटा कमिज छन् र नरेन्द्रसँग 73 वटा कमिज। कम को छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "सुमन",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुनिल",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "नरेन्द्रसँग"
+  },
+  {
+    "text": "सुमनको उमेर 69 वर्ष, उमेशको उमेर 49 वर्ष, नरेन्द्रको उमेर 67 वर्ष। दोस्रो स्थानमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "नरेन्द्र",
+      "सुमन",
+      "उमेश"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "अशोक",
+    "final_choice": "सुमन",
+    "final_generated": "अशोक"
+  },
+  {
+    "text": "लोकेशको उमेर 47 वर्ष भनिएको छ, योगेशको उमेर 65 वर्ष भनिएको छ। ठूलो को छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "बराबर"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "योगेशको"
+  },
+  {
+    "text": "यदि सुमनको उचाइ 54 सेन्टिमिटर छ र नरेन्द्रको उचाइ 79 सेन्टिमिटर छ भने, अग्लो को छ?",
+    "category": "mixed_relation",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "सुमन",
+      "नरेन्द्र",
+      "बराबर"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "100",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "अशोक",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "अशोकको"
+  },
+  {
+    "text": "सूचीमा सुमनको उमेर 77 वर्ष, लोकेशको उमेर 73 वर्ष र नरेन्द्रको उमेर 65 वर्ष छ। बीचमा को छ?",
+    "category": "ranking",
+    "hops": 1,
+    "gold": "लोकेश",
+    "candidates": [
+      "सुमन",
+      "लोकेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "सुरेश",
+    "final_choice": "लोकेश",
+    "final_generated": "सुभाषचन्द्रको"
+  },
+  {
+    "text": "योगेशको उमेर 42 वर्ष उल्लेख छ, लोकेशको 53 वर्ष र नरेन्द्रको 86 वर्ष। सबैभन्दा ठूलो को हो?",
+    "category": "three_entity_ordering",
+    "hops": 1,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "योगेश",
+      "लोकेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "10",
+    "baseline_choice": "नरेन्द्र",
+    "baseline_generated": "नरेन्द्रको",
+    "final_choice": "नरेन्द्र",
+    "final_generated": "गोकुल"
+  },
+  {
+    "text": "दिइएको छ: नरेन्द्र उमेशभन्दा अग्लो छ; उमेश लोकेशभन्दा अग्लो छ। सबैभन्दा अग्लो को हो?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "नरेन्द्र",
+    "candidates": [
+      "लोकेश",
+      "उमेश",
+      "नरेन्द्र"
+    ],
+    "pretrained_choice": "नरेन्द्र",
+    "pretrained_generated": "नरेन्द्र",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "दिइएको छ: उमेश सुमनभन्दा ठूलो छ; बिकास योगेशभन्दा सानो छ; बिकासको तुलनामा उमेश सानो छ। सुमन र बिकासको तुलनामा को ठूलो छ?",
+    "category": "chain3_relation",
+    "hops": 3,
+    "gold": "बिकास",
+    "candidates": [
+      "सुमन",
+      "बिकास"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "विकास",
+    "baseline_choice": "सुमन",
+    "baseline_generated": "बिनोद",
+    "final_choice": "बिकास",
+    "final_generated": "बिकासको"
+  },
+  {
+    "text": "दिइएको छ: योगेश नरेन्द्रभन्दा होचो छ; उमेशको तुलनामा नरेन्द्र होचो छ। उमेश र योगेश मध्ये को होचो छ?",
+    "category": "chain2_relation",
+    "hops": 2,
+    "gold": "योगेश",
+    "candidates": [
+      "उमेश",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "‘अन्तिममा",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "महेश",
+    "final_choice": "योगेश",
+    "final_generated": "योगेश"
+  },
+  {
+    "text": "दिइएको छ: सुमन योगेशभन्दा सानो छ; उमेशको तुलनामा लोकेश सानो छ; उमेशको तुलनामा सुमन ठूलो छ। चारैमध्ये को सानो छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "योगेश",
+      "उमेश",
+      "सुमन"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "सुमन",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "दीपक",
+    "final_choice": "उमेश",
+    "final_generated": "राजेशको"
+  },
+  {
+    "text": "दिइएको छ: बिकासको तुलनामा योगेश सानो छ; लोकेशको तुलनामा योगेश ठूलो छ। तीनैमध्ये को सानो छ?",
+    "category": "chain2_superlative",
+    "hops": 2,
+    "gold": "लोकेश",
+    "candidates": [
+      "लोकेश",
+      "बिकास",
+      "योगेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "योगेश",
+    "baseline_choice": "योगेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  },
+  {
+    "text": "लोकेशसँग 74 वटा साइकल पाइयो, उमेशसँग 66 वटा साइकल। दुवैमध्ये को कम छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "उमेश",
+    "candidates": [
+      "लोकेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "उमेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "उमेश",
+    "final_generated": "उमेशसँग"
+  },
+  {
+    "text": "बजारमा छाता 73 रुपैयाँ र टोपी 70 रुपैयाँमा पाइन्छ। कुन सस्तो छ?",
+    "category": "numeric_comparison",
+    "hops": 1,
+    "gold": "टोपी",
+    "candidates": [
+      "छाता",
+      "टोपी"
+    ],
+    "pretrained_choice": "टोपी",
+    "pretrained_generated": "10",
+    "baseline_choice": "टोपी",
+    "baseline_generated": "टोपी",
+    "final_choice": "टोपी",
+    "final_generated": "टोपी"
+  },
+  {
+    "text": "योगेशको उचाइ 61 सेन्टिमिटर पाइयो, उमेशको उचाइ 45 सेन्टिमिटर पाइयो। अग्लो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "योगेश",
+    "candidates": [
+      "योगेश",
+      "उमेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "10",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "उमेशको",
+    "final_choice": "योगेश",
+    "final_generated": "योगेश"
+  },
+  {
+    "text": "हामीलाई थाहा छ कि योगेश बिकासभन्दा होचो छ, लोकेशको तुलनामा उमेश अग्लो छ, र योगेशको तुलनामा उमेश होचो छ। दोस्रो सबैभन्दा अग्लो को छ?",
+    "category": "chain3_superlative",
+    "hops": 3,
+    "gold": "योगेश",
+    "candidates": [
+      "बिकास",
+      "उमेश",
+      "योगेश",
+      "लोकेश"
+    ],
+    "pretrained_choice": "योगेश",
+    "pretrained_generated": "उमेशको",
+    "baseline_choice": "उमेश",
+    "baseline_generated": "गोपाल",
+    "final_choice": "योगेश",
+    "final_generated": "गोपाल"
+  },
+  {
+    "text": "बिकासको उचाइ 49 सेन्टिमिटर पाइयो, लोकेशको उचाइ 65 सेन्टिमिटर पाइयो। होचो को छ?",
+    "category": "direct_comparison",
+    "hops": 1,
+    "gold": "बिकास",
+    "candidates": [
+      "बिकास",
+      "लोकेश"
+    ],
+    "pretrained_choice": "बिकास",
+    "pretrained_generated": "10",
+    "baseline_choice": "लोकेश",
+    "baseline_generated": "दिपेशको",
+    "final_choice": "लोकेश",
+    "final_generated": "लोकेशको"
+  }
+]

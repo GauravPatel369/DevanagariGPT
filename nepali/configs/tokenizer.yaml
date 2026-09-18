@@ -1,0 +1,31 @@
+# Model L — Nepali. Stage 8 tokenizer configuration.
+#
+# The two languages are swept independently and are expected to select DIFFERENT
+# vocabulary sizes. Nepali agglutinative verb morphology and postpositional
+# suffixes (गरेको, भएको, -ले, -लाई, -बाट) mean a given vocabulary buys less
+# compression than in Hindi. Quantifying that gap answers Phase-3 question 3
+# ("what tokenizer / corpus factors most affected the lower-resource model?").
+#
+# Same selection rule as Hindi: fertility against embedding parameter cost at
+# d=512 with tied embeddings, choose the knee.
+
+language: nepali
+lang_code: ne
+
+vocab_size: 10000
+model_type: unigram
+
+sweep_vocab_sizes: [5000, 8000, 10000]
+sweep_model_types: [bpe, unigram]
+
+d_model: 512
+param_budget: 25000000
+
+max_sample_lines: 8000000
+eval_docs: 5000
+
+example_sentences:
+  - "नेपाल एउटा सुन्दर र विविधतायुक्त देश हो।"
+  - "उनले भने कि उनी भोलि काठमाडौं जानेछन्।"
+  - "विज्ञान र प्रविधिको क्षेत्रमा छिटो प्रगति भइरहेको छ।"
+  - "राम श्यामभन्दा अग्लो छ र श्याम मोहनभन्दा अग्लो छ।"

@@ -1,0 +1,255 @@
+{
+  "nepali": {
+    "language": "nepali",
+    "reference_statistics": {
+      "distinct_1": 0.6101,
+      "distinct_2": 0.9423,
+      "repetition_rate_4gram": 0.0027
+    },
+    "sweet_spot": {
+      "reference_statistics": {
+        "distinct_1": 0.6101,
+        "distinct_2": 0.9423,
+        "repetition_rate_4gram": 0.0027
+      },
+      "ranking": [
+        {
+          "setting": "T1.0",
+          "naturalness_distance": 0.0045,
+          "chrf2": 19.338,
+          "rep4_delta": -0.0022,
+          "distinct2_delta": -0.0023
+        },
+        {
+          "setting": "T1.0+topp0.95",
+          "naturalness_distance": 0.0115,
+          "chrf2": 19.584,
+          "rep4_delta": -0.0019,
+          "distinct2_delta": -0.0096
+        },
+        {
+          "setting": "T1.0+topp0.9",
+          "naturalness_distance": 0.0171,
+          "chrf2": 19.346,
+          "rep4_delta": 0.001,
+          "distinct2_delta": -0.0161
+        },
+        {
+          "setting": "T1.0+topk50",
+          "naturalness_distance": 0.0472,
+          "chrf2": 19.487,
+          "rep4_delta": 0.0023,
+          "distinct2_delta": -0.0449
+        },
+        {
+          "setting": "T0.8+topp0.9+rep1.2",
+          "naturalness_distance": 0.0475,
+          "chrf2": 19.644,
+          "rep4_delta": 0.0003,
+          "distinct2_delta": -0.0472
+        },
+        {
+          "setting": "T1.5",
+          "naturalness_distance": 0.051,
+          "chrf2": 18.62,
+          "rep4_delta": -0.0027,
+          "distinct2_delta": 0.0483
+        },
+        {
+          "setting": "T0.8+topp0.9+norepeat4",
+          "naturalness_distance": 0.0531,
+          "chrf2": 18.459,
+          "rep4_delta": -0.0023,
+          "distinct2_delta": -0.0508
+        },
+        {
+          "setting": "T0.8",
+          "naturalness_distance": 0.0826,
+          "chrf2": 19.122,
+          "rep4_delta": 0.0099,
+          "distinct2_delta": -0.0727
+        },
+        {
+          "setting": "T0.8+topp0.9",
+          "naturalness_distance": 0.1449,
+          "chrf2": 18.478,
+          "rep4_delta": 0.0238,
+          "distinct2_delta": -0.1211
+        },
+        {
+          "setting": "greedy+norepeat4",
+          "naturalness_distance": 0.1882,
+          "chrf2": 16.318,
+          "rep4_delta": -0.0001,
+          "distinct2_delta": -0.1881
+        },
+        {
+          "setting": "T0.5",
+          "naturalness_distance": 0.6314,
+          "chrf2": 16.13,
+          "rep4_delta": 0.2483,
+          "distinct2_delta": -0.3831
+        },
+        {
+          "setting": "greedy",
+          "naturalness_distance": 1.4848,
+          "chrf2": 12.195,
+          "rep4_delta": 0.7375,
+          "distinct2_delta": -0.7473
+        }
+      ],
+      "best": "T1.0"
+    },
+    "checkpoint": "report\\Phase 2\\vocab_sweep\\ne_vocab_5000\\checkpoints\\last.pt",
+    "step": 31266,
+    "parameters": 25546112,
+    "split": "test",
+    "model_config": {
+      "vocab_size": 5000,
+      "context": 512,
+      "d_model": 512,
+      "n_layer": 7,
+      "n_head": 8,
+      "d_ff": 2176,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "rope_theta": 10000.0,
+      "use_rope": true
+    },
+    "intrinsic": {
+      "tokens_evaluated": 64213504,
+      "cross_entropy_nats": 3.0258,
+      "perplexity": 20.61,
+      "seconds": 838.4,
+      "bytes_per_token": 9.4207,
+      "bits_per_byte": 0.4634,
+      "compression_ratio_vs_raw": 17.26
+    },
+    "generation": {
+      "greedy": {
+        "bleu_char_4gram": 12.098,
+        "chrf2": 12.195,
+        "rouge_l": 7.223,
+        "distinct_1": 0.1298,
+        "distinct_2": 0.195,
+        "repetition_rate_4gram": 0.7402
+      },
+      "greedy+norepeat4": {
+        "bleu_char_4gram": 18.01,
+        "chrf2": 16.318,
+        "rouge_l": 8.562,
+        "distinct_1": 0.387,
+        "distinct_2": 0.7542,
+        "repetition_rate_4gram": 0.0026
+      },
+      "T0.5": {
+        "bleu_char_4gram": 18.227,
+        "chrf2": 16.13,
+        "rouge_l": 8.295,
+        "distinct_1": 0.3035,
+        "distinct_2": 0.5592,
+        "repetition_rate_4gram": 0.251
+      },
+      "T0.8": {
+        "bleu_char_4gram": 22.391,
+        "chrf2": 19.122,
+        "rouge_l": 8.51,
+        "distinct_1": 0.507,
+        "distinct_2": 0.8696,
+        "repetition_rate_4gram": 0.0126
+      },
+      "T1.0": {
+        "bleu_char_4gram": 21.564,
+        "chrf2": 19.338,
+        "rouge_l": 7.746,
+        "distinct_1": 0.5934,
+        "distinct_2": 0.94,
+        "repetition_rate_4gram": 0.0005
+      },
+      "T1.5": {
+        "bleu_char_4gram": 17.623,
+        "chrf2": 18.62,
+        "rouge_l": 4.219,
+        "distinct_1": 0.6764,
+        "distinct_2": 0.9906,
+        "repetition_rate_4gram": 0.0
+      },
+      "T1.0+topk50": {
+        "bleu_char_4gram": 22.607,
+        "chrf2": 19.487,
+        "rouge_l": 8.59,
+        "distinct_1": 0.5108,
+        "distinct_2": 0.8974,
+        "repetition_rate_4gram": 0.005
+      },
+      "T1.0+topp0.9": {
+        "bleu_char_4gram": 22.004,
+        "chrf2": 19.346,
+        "rouge_l": 8.291,
+        "distinct_1": 0.5469,
+        "distinct_2": 0.9262,
+        "repetition_rate_4gram": 0.0037
+      },
+      "T1.0+topp0.95": {
+        "bleu_char_4gram": 22.32,
+        "chrf2": 19.584,
+        "rouge_l": 8.254,
+        "distinct_1": 0.564,
+        "distinct_2": 0.9327,
+        "repetition_rate_4gram": 0.0008
+      },
+      "T0.8+topp0.9": {
+        "bleu_char_4gram": 21.434,
+        "chrf2": 18.478,
+        "rouge_l": 8.856,
+        "distinct_1": 0.4464,
+        "distinct_2": 0.8212,
+        "repetition_rate_4gram": 0.0265
+      },
+      "T0.8+topp0.9+rep1.2": {
+        "bleu_char_4gram": 21.552,
+        "chrf2": 19.644,
+        "rouge_l": 7.686,
+        "distinct_1": 0.4968,
+        "distinct_2": 0.8951,
+        "repetition_rate_4gram": 0.003
+      },
+      "T0.8+topp0.9+norepeat4": {
+        "bleu_char_4gram": 21.172,
+        "chrf2": 18.459,
+        "rouge_l": 8.522,
+        "distinct_1": 0.5064,
+        "distinct_2": 0.8915,
+        "repetition_rate_4gram": 0.0004
+      }
+    },
+    "generation_config": {
+      "n_samples": 64,
+      "prompt_tokens": 128,
+      "continue_tokens": 128
+    },
+    "examples": [
+      {
+        "setting": "greedy",
+        "index": 0,
+        "prompt": "भएको थियो । वाग्नर प्रमुखले रूसी सेनामा सामेल हुने प्रस्ताव अस्वीकार गरे : पुटिन\n\nशुक्रबार, असार 29, 2080\n\nराष्ट्रपति पुटिनले बिहीबार कोमरसेन्ट व्यापार दैनिकसँगको अन्तर्वार्तामा प्रिगोजिनसहित 35 वाग्न",
+        "generated": "रलाई रुसी सेनामा सामेल हुन आग्रह गरेका थिए । ~अमर बहादुर थापा~\nमलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई ‘मलाई",
+        "reference": "र कमान्डरहरू जुन 29 मा क्रेमलिन बैठकमा उपस्थित रहेका खुलाएका थिए ।\nपुटिनले उनीहरूलाई रूसी सेनामा रोजगारीका धेरै विकल्पहरू प्रस्ताव गरेको खुलाए । जसमा एक वरिष्ठ वाग्नर कमान्डरको कमान्डमा सेवा जारी राख्ने विकल्प थियो । इरानलाई ट्रम्पको चेतावनी : युद्धविराम नमाने तेल पाइपलाइनमा विस्फोट हुन सक्छ\n\nसोमबार"
+      },
+      {
+        "setting": "greedy",
+        "index": 1,
+        "prompt": "आमालाई मनपर्दैन । त्यो बेला उनी कालीकी आमालाई छुन पनि सक्दैनन् । यसो कोट्याउन खोज्यो, झर्किन्छिन् । कत्तिपनि प्रतिकारमा उत्रिन सक्दैनन् उनी । उनलाई आफ्नी श्रीमतीको अजङ्ग–शरीरदेखि एकप्रकारको डर लाग्छ ।",
+        "generated": "\nकालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको काखमा कालीको बाउको",
+        "reference": "विचरा बुढा, अन्ततः भुइँमा सुत्न विवश हुन्छन् ।\nएकरात,\nउनले रक्सी खाएनन् । नेपाल बन्द भएकोले उनले रिक्सा चलाएर दुई हजार रुपैयाँ कमाएका थिए । अक्सर नेपाल बन्द हुदाँ उनलाई मनग्य मुनाफा हुनेगर्छ । तसर्थ त्यो रात उनले रक्सी नपिई घर जाने निधो गरे । मासु पसलबाट उनले एक किलो खसीको मासु किने । नजिकैको पसलबाट"
+      },
+      {
+        "setting": "greedy",
+        "index": 2,
+        "prompt": "्र प्राप्तिका लागि गरेको सङ्घर्ष देख्न सक्नुपर्छ । राणाशासन, निरङ्कुश पञ्चायत र राजाको प्रत्यक्ष शासनकालविरुद्धको सङ्घर्ष देख्न सक्नुपर्छ । समावेशिता, सङ्घीयता र गणतन्त्रको यात्रालाई देख्न सक्नुपर्छ ।",
+        "generated": "\nकांग्रेसले आफ्नो इतिहासलाई नियाल्दा इतिहासको इतिहासलाई बुझ्न सक्नुपर्छ । इतिहासको इतिहासलाई बुझ्न सक्नुपर्छ । इतिहासको इतिहासलाई बुझ्न सक्नुपर्छ । इतिहासको इतिहासलाई बुझ्न सक्नुपर्छ । इतिहासको इतिहासलाई बुझ्न सक्नुपर्छ । इतिहासको इतिहासलाई बुझ्न सक्नुपर्छ । इतिहासको इतिहासलाई बुझ्न सक्नुपर्छ । इतिह",
+        "reference": "अनि मात्र उसले गणतन्त्रको महत्त्वबोध गर्न सक्छ ।\nकांग्रेसले के पनि सम्झनुपर्छ भने जनताले उसलाई केवल इतिहासको सम्मान गर्न चुनेका होइनन् । जनताले उसलाई भविष्य निर्माण गर्न चुनेका हुन् । कांग्रेसभित्र संवैधानिक राजतन्त्रको विचार फेरि टुसाउनु केवल एउटा वैकल्पिक राजनीतिक प्रस्ताव होइन । यदि यसलाई पार्टीक"
+      }
+    ]
+  }
+}

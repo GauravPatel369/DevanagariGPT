@@ -1,0 +1,33 @@
+{
+  "language": "hindi",
+  "split": "test_b",
+  "n": 600,
+  "endings": [
+    "भन्दा",
+    "सँग",
+    "लाई",
+    "को",
+    "ले",
+    "मा"
+  ],
+  "models": {
+    "pretrained": {
+      "step": 55012,
+      "strict": 0.1517,
+      "with_ending": 0.1517,
+      "names_a_candidate_with_ending": 0.4267
+    },
+    "plain": {
+      "step": 625,
+      "strict": 0.0633,
+      "with_ending": 0.0633,
+      "names_a_candidate_with_ending": 0.085
+    },
+    "final": {
+      "step": 50,
+      "strict": 0.3333,
+      "with_ending": 0.3333,
+      "names_a_candidate_with_ending": 0.8517
+    }
+  }
+}

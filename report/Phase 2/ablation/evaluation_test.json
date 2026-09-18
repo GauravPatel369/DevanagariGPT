@@ -1,0 +1,255 @@
+{
+  "hindi": {
+    "language": "hindi",
+    "reference_statistics": {
+      "distinct_1": 0.3218,
+      "distinct_2": 0.8206,
+      "repetition_rate_4gram": 0.0087
+    },
+    "sweet_spot": {
+      "reference_statistics": {
+        "distinct_1": 0.3218,
+        "distinct_2": 0.8206,
+        "repetition_rate_4gram": 0.0087
+      },
+      "ranking": [
+        {
+          "setting": "T1.0+topp0.95",
+          "naturalness_distance": 0.0116,
+          "chrf2": 21.734,
+          "rep4_delta": -0.0035,
+          "distinct2_delta": -0.0081
+        },
+        {
+          "setting": "T1.0",
+          "naturalness_distance": 0.0228,
+          "chrf2": 21.526,
+          "rep4_delta": -0.0061,
+          "distinct2_delta": 0.0167
+        },
+        {
+          "setting": "T1.0+topp0.9",
+          "naturalness_distance": 0.0361,
+          "chrf2": 21.796,
+          "rep4_delta": 0.003,
+          "distinct2_delta": -0.0331
+        },
+        {
+          "setting": "T0.8+topp0.9+rep1.2",
+          "naturalness_distance": 0.0808,
+          "chrf2": 21.895,
+          "rep4_delta": -0.0011,
+          "distinct2_delta": -0.0797
+        },
+        {
+          "setting": "T0.8+topp0.9+norepeat4",
+          "naturalness_distance": 0.1237,
+          "chrf2": 20.375,
+          "rep4_delta": -0.0087,
+          "distinct2_delta": -0.115
+        },
+        {
+          "setting": "T1.0+topk50",
+          "naturalness_distance": 0.1392,
+          "chrf2": 21.043,
+          "rep4_delta": 0.0238,
+          "distinct2_delta": -0.1154
+        },
+        {
+          "setting": "T0.8",
+          "naturalness_distance": 0.1417,
+          "chrf2": 20.911,
+          "rep4_delta": 0.0345,
+          "distinct2_delta": -0.1072
+        },
+        {
+          "setting": "T1.5",
+          "naturalness_distance": 0.1704,
+          "chrf2": 18.082,
+          "rep4_delta": -0.0087,
+          "distinct2_delta": 0.1617
+        },
+        {
+          "setting": "T0.8+topp0.9",
+          "naturalness_distance": 0.3001,
+          "chrf2": 20.313,
+          "rep4_delta": 0.0903,
+          "distinct2_delta": -0.2098
+        },
+        {
+          "setting": "greedy+norepeat4",
+          "naturalness_distance": 0.3487,
+          "chrf2": 18.67,
+          "rep4_delta": -0.0085,
+          "distinct2_delta": -0.3402
+        },
+        {
+          "setting": "T0.5",
+          "naturalness_distance": 0.8566,
+          "chrf2": 16.712,
+          "rep4_delta": 0.3939,
+          "distinct2_delta": -0.4627
+        },
+        {
+          "setting": "greedy",
+          "naturalness_distance": 1.4663,
+          "chrf2": 12.646,
+          "rep4_delta": 0.777,
+          "distinct2_delta": -0.6893
+        }
+      ],
+      "best": "T1.0+topp0.95"
+    },
+    "checkpoint": "hindi_norope\\checkpoints\\last.pt",
+    "step": 27500,
+    "parameters": 25350912,
+    "split": "test",
+    "model_config": {
+      "vocab_size": 10000,
+      "context": 512,
+      "d_model": 512,
+      "n_layer": 7,
+      "n_head": 8,
+      "d_ff": 1792,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "rope_theta": 10000.0,
+      "use_rope": false
+    },
+    "intrinsic": {
+      "tokens_evaluated": 51399168,
+      "cross_entropy_nats": 3.3225,
+      "perplexity": 27.73,
+      "seconds": 554.2,
+      "bytes_per_token": 9.7857,
+      "bits_per_byte": 0.4898,
+      "compression_ratio_vs_raw": 16.33
+    },
+    "generation": {
+      "greedy": {
+        "bleu_char_4gram": 12.204,
+        "chrf2": 12.646,
+        "rouge_l": 10.166,
+        "distinct_1": 0.0627,
+        "distinct_2": 0.1313,
+        "repetition_rate_4gram": 0.7857
+      },
+      "greedy+norepeat4": {
+        "bleu_char_4gram": 19.673,
+        "chrf2": 18.67,
+        "rouge_l": 13.447,
+        "distinct_1": 0.1564,
+        "distinct_2": 0.4804,
+        "repetition_rate_4gram": 0.0002
+      },
+      "T0.5": {
+        "bleu_char_4gram": 17.114,
+        "chrf2": 16.712,
+        "rouge_l": 13.025,
+        "distinct_1": 0.1263,
+        "distinct_2": 0.3579,
+        "repetition_rate_4gram": 0.4026
+      },
+      "T0.8": {
+        "bleu_char_4gram": 22.44,
+        "chrf2": 20.911,
+        "rouge_l": 13.071,
+        "distinct_1": 0.2483,
+        "distinct_2": 0.7134,
+        "repetition_rate_4gram": 0.0432
+      },
+      "T1.0": {
+        "bleu_char_4gram": 22.919,
+        "chrf2": 21.526,
+        "rouge_l": 12.193,
+        "distinct_1": 0.3283,
+        "distinct_2": 0.8373,
+        "repetition_rate_4gram": 0.0026
+      },
+      "T1.5": {
+        "bleu_char_4gram": 14.526,
+        "chrf2": 18.082,
+        "rouge_l": 6.82,
+        "distinct_1": 0.5215,
+        "distinct_2": 0.9823,
+        "repetition_rate_4gram": 0.0
+      },
+      "T1.0+topk50": {
+        "bleu_char_4gram": 22.612,
+        "chrf2": 21.043,
+        "rouge_l": 12.794,
+        "distinct_1": 0.2226,
+        "distinct_2": 0.7052,
+        "repetition_rate_4gram": 0.0325
+      },
+      "T1.0+topp0.9": {
+        "bleu_char_4gram": 23.721,
+        "chrf2": 21.796,
+        "rouge_l": 12.885,
+        "distinct_1": 0.2869,
+        "distinct_2": 0.7875,
+        "repetition_rate_4gram": 0.0117
+      },
+      "T1.0+topp0.95": {
+        "bleu_char_4gram": 23.433,
+        "chrf2": 21.734,
+        "rouge_l": 12.686,
+        "distinct_1": 0.3076,
+        "distinct_2": 0.8125,
+        "repetition_rate_4gram": 0.0052
+      },
+      "T0.8+topp0.9": {
+        "bleu_char_4gram": 21.782,
+        "chrf2": 20.313,
+        "rouge_l": 13.025,
+        "distinct_1": 0.2029,
+        "distinct_2": 0.6108,
+        "repetition_rate_4gram": 0.099
+      },
+      "T0.8+topp0.9+rep1.2": {
+        "bleu_char_4gram": 23.687,
+        "chrf2": 21.895,
+        "rouge_l": 12.312,
+        "distinct_1": 0.2391,
+        "distinct_2": 0.7409,
+        "repetition_rate_4gram": 0.0076
+      },
+      "T0.8+topp0.9+norepeat4": {
+        "bleu_char_4gram": 21.686,
+        "chrf2": 20.375,
+        "rouge_l": 12.534,
+        "distinct_1": 0.23,
+        "distinct_2": 0.7056,
+        "repetition_rate_4gram": 0.0
+      }
+    },
+    "generation_config": {
+      "n_samples": 128,
+      "prompt_tokens": 128,
+      "continue_tokens": 128
+    },
+    "examples": [
+      {
+        "setting": "greedy",
+        "index": 0,
+        "prompt": "्स क्रिकेट की ओर से की गई है।\nलेखक के बारे में\n\nविकाश गौड़: डिप्टी चीफ कंटेंट प्रोड्यूसर कम असिस्टेंट मैनेजर, स्पोर्ट्स\nसंक्षिप्त विवरण:\nविकाश गौड़ पिछले 8 वर्षों से हिंदी डिजिटल पत्रकारिता में सक्रिय",
+        "generated": "हैं और वर्तमान में लाइव हिन्दुस्तान में डिप्टी चीफ कंटेंट प्रोड्यूसर के रूप में कार्यरत हैं। वे शैक्षणिक रूप से हैं और पेशे से हैं।\nअगर उनकी आर्थिक स्थिति की बात करें तो\nविकाश गौड़ पिछले 8 वर्षों से लाइव हिन्दुस्तान में कार्यरत हैं। वे शैक्षणिक रूप से हैं और पेशे से हैं।\nअगर उनकी आर्थिक स्थिति की बा",
+        "reference": "हैं और वर्तमान में लाइव हिन्दुस्तान (हिन्दुस्तान टाइम्स ग्रुप) के स्पोर्ट्स सेक्शन में डिप्टी चीफ कंटेंट प्रोड्यूसर (असिस्टेंट मैनेजर) के रूप में अपनी सेवाएं दे रहे हैं।\nविस्तृत बायो:\nपरिचय और अनुभव: विकाश गौड़ भारतीय डिजिटल स्पोर्ट्स मीडिया का एक उभरता हुआ चेहरा हैं। लगभग 8 वर्षों के अनुभव के साथ, "
+      },
+      {
+        "setting": "greedy",
+        "index": 1,
+        "prompt": "\nकविताओं के हाथ थाम कर\nज़िन्दगी की झंझटों में कूद सकें\nजीना आसान बने\nऔर कविताओं के लिए भी बची रहे\nथोड़ी सी जगह\nउस आसान जीवन में !\n2003 असफलता / अजित सिंह तोमर\nमुद्दत बाद मिलनें पर उसने कहा\nबड़े अश्लील",
+        "generated": "ता / अजित सिंह तोमर\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद मिलनें पर उसने कहा\nमुद्दत बाद",
+        "reference": "हो गए हो तुम\nऔर थोड़े घटिया भी\nउसने जवाब दिया\nकोई नई बात कहो\nइतने दिन बाद मिली हो\nऔर वही कह रही हो\nजो दुनिया कहती है\nअच्छा ! दुनिया ऐसा कहती है तुम्हारे बारे में?\nउसने चौंकते हुए कहा\nहाँ !\nफिर तुम ये नही हो सकते\nतुम तो दुनिया को गलत साबित करने के लिए पैदा हुए थे\nमैं गलत थी फिर इस हिसाब से\nअच्छा क्या"
+      },
+      {
+        "setting": "greedy",
+        "index": 2,
+        "prompt": " काम चालू कराने की मांग की। ग्रामीणों ने बताया कि अक्सर कनीय अभियंता के गायब रहने की वजह से लोकल ब्रांड के छड़ व मिनी प्लांट के सीमेंट व घटिया बालू से निर्माण कार्य हो रहा है। ग्रामीण वीरेंद्र प्रसाद,",
+        "generated": "रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, रामकुमार, ",
+        "reference": "मनोज कुमार, सुदामा राम, राजेंद्र साव, देवलाल सिंह, रोहन प्रसाद, दिलीप चौधरी, उमेश राम, दिलीप कुमार, बिनोद सोनी, उपेंद्र राम, महेंद्र चोधरी, जगदीश राम सहित अन्य ने बताया कि पिलर में 25 की जगह 20 एमएम का छड़ लगाया जा रहा है। छड़ लगाने से पहले नीचे नदी में पीसीसी का ढलाई तक नहीं हुआ है। बालू की जगह पत्"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "gauravpatel123/lma-train-hindi",
+  "title": "LMA Train hindi",
+  "code_file": "train_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "gauravpatel123/lma-phase1-tokens",
+    "gauravpatel123/lma-phase2-code"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "gauravpatel123/lma-train-hindi"
+  ],
+  "enable_tpu": false,
+  "model_sources": []
+}

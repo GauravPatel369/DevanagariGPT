@@ -1,0 +1,70 @@
+{
+  "models": {
+    "pretrained": {
+      "checkpoint": "nepali\\checkpoints\\last.pt",
+      "step": 27500,
+      "name_swap": {
+        "n": 600,
+        "choice_original": 0.5183,
+        "choice_edited": 0.5233,
+        "choice_consistent": 0.9117,
+        "generation_original": 0.0667,
+        "generation_edited": 0.0617,
+        "generation_consistent": 0.8217
+      },
+      "fact_reversal": {
+        "n": 600,
+        "choice_original": 0.4033,
+        "choice_edited": 0.3983,
+        "choice_consistent": 0.825,
+        "generation_original": 0.0667,
+        "generation_edited": 0.05,
+        "generation_consistent": 0.4533
+      }
+    },
+    "plain": {
+      "checkpoint": "nepali\\reasoning\\checkpoints\\baseline\\best.pt",
+      "step": 312,
+      "name_swap": {
+        "n": 600,
+        "choice_original": 0.5067,
+        "choice_edited": 0.5067,
+        "choice_consistent": 0.6367,
+        "generation_original": 0.0417,
+        "generation_edited": 0.0217,
+        "generation_consistent": 0.5667
+      },
+      "fact_reversal": {
+        "n": 600,
+        "choice_original": 0.375,
+        "choice_edited": 0.4017,
+        "choice_consistent": 0.71,
+        "generation_original": 0.02,
+        "generation_edited": 0.0133,
+        "generation_consistent": 0.695
+      }
+    },
+    "final": {
+      "checkpoint": "nepali\\reasoning\\checkpoints\\best.pt",
+      "step": 312,
+      "name_swap": {
+        "n": 600,
+        "choice_original": 0.49,
+        "choice_edited": 0.5067,
+        "choice_consistent": 0.44,
+        "generation_original": 0.1933,
+        "generation_edited": 0.1817,
+        "generation_consistent": 0.33
+      },
+      "fact_reversal": {
+        "n": 600,
+        "choice_original": 0.375,
+        "choice_edited": 0.4067,
+        "choice_consistent": 0.645,
+        "generation_original": 0.1217,
+        "generation_edited": 0.1183,
+        "generation_consistent": 0.46
+      }
+    }
+  }
+}

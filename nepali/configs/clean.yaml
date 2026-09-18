@@ -1,0 +1,29 @@
+# Model L — Nepali. Stage 3-5 configuration.
+# Identical thresholds to hindi/configs/clean.yaml except lang_code: any
+# asymmetry between the two languages would contaminate the Phase-3 comparison.
+language: nepali
+lang_code: ne
+
+# Devanagari digits ०-९ -> ASCII 0-9. Reduces vocabulary pressure. Must match
+# the Hindi config.
+map_devanagari_digits: true
+
+# Drop lines appearing in >1% of a source's documents (nav menus, copyright
+# lines, "यो पनि पढ्नुहोस्" share prompts).
+boilerplate_max_doc_freq: 0.01
+
+# Abstain threshold for the six-class Devanagari classifier. Documents below it
+# go to data/quarantine/ rather than being deleted, so contamination rates can
+# be reported.
+lid_min_conf: 0.90
+
+filters:
+  min_chars: 200
+  min_script_ratio: 0.75       # computed over LETTERS only
+  min_word_len: 1.5
+  max_word_len: 12.0
+  min_terminal_frac: 0.0       # do not reject prose documents lacking sentence end markers
+  max_symbol_ratio: 0.10
+  max_dup_lines: 0.30
+  max_dup_ngrams: 0.20
+  dup_ngram_n: 5

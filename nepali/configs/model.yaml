@@ -1,0 +1,53 @@
+# Model L — Nepali (`ne`) Phase-2 pretraining configuration.
+#
+# Architecture and optimisation are IDENTICAL to the other language; only the
+# vocabulary source and checkpoint directory differ. Any asymmetry here would
+# confound the Phase-3 resource-tier comparison, which is the same reason the
+# Phase-1 cleaning thresholds were held identical.
+#
+# Parameter budget (verified by tests/test_model.py):
+#   embedding  10,000 x 512 =  5,120,000   (tied: input and output share it)
+#   7 blocks   x 2,890,     = 20,230,912
+#   TOTAL                   = 25,350,912   (+1.4% of the ~25M target)
+#
+# d_ff is 3.5 x d_model rather than the conventional 4x. Both FFN matrices are
+# d_model x d_ff, so the FFN is two thirds of every block; trimming the ratio
+# funds a SEVENTH attention layer inside the budget. Depth was preferred over
+# FFN width because composition across layers is what a language model needs.
+
+language: nepali
+lang_code: ne
+
+model:
+  vocab_size: 10000        # from Phase 1; NOT shared between languages
+  context: 512             # ~= one document (mean doc: 586 tok hi / 505 tok ne)
+  d_model: 512
+  n_layer: 7
+  n_head: 8                # head_dim = 64, even, required by RoPE
+  d_ff: 1792               # 3.5 x d_model
+  dropout: 0.1
+  tie_embeddings: true     # saves 5.12M params, a fifth of the budget
+  rope_theta: 10000.0
+
+train:
+  seed: 1337
+
+  # Effective batch = micro_batch x grad_accum = 32 sequences = 16,384 tokens.
+  # Split this way so the same effective batch runs on a 6 GB laptop card and a
+  # 16 GB Kaggle GPU: only micro_batch changes, and the optimisation is identical.
+  micro_batch: 16
+  grad_accum: 2
+
+  # 27,500 steps x 16,384 tokens = 450M tokens = one epoch over the training
+  # split. At ~25M parameters that is close to the compute-optimal token count.
+  max_steps: 27500
+  warmup_steps: 500        # Adam's second moment is unreliable before this
+  learning_rate: 6.0e-4
+  min_lr: 6.0e-5           # cosine floor, 10% of peak
+  weight_decay: 0.1        # matrices only; not LayerNorm gains or biases
+  beta1: 0.9
+  beta2: 0.95              # 0.95 not 0.999: shorter memory suits noisy LM grads
+  grad_clip: 1.0
+
+  log_every: 50
+  eval_every: 500

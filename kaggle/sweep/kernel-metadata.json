@@ -1,0 +1,20 @@
+{
+  "id": "xyzwkbhgfcvn/lma-sweep-nepali",
+  "title": "lma-sweep-nepali",
+  "code_file": "sweep_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "xyzwkbhgfcvn/lma-phase2-code",
+    "xyzwkbhgfcvn/lma-reasoning-data",
+    "xyzwkbhgfcvn/lma-phase1-tokens-ne",
+    "xyzwkbhgfcvn/lma-pretrained-nepali"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

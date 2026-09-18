@@ -1,0 +1,18 @@
+# Phase 1 — corpus construction and tokenizers
+datasets>=2.18.0          # streaming ingestion of public corpora (datasets only)
+httpx>=0.27.0             # async crawler
+trafilatura>=1.8.0        # HTML boilerplate removal (not a language model)
+lxml_html_clean>=0.1.0     # HTML cleaner required by justext/trafilatura for lxml 5.2+
+zstandard>=0.22.0         # shard compression
+PyYAML>=6.0
+sentencepiece>=0.2.0      # tokenizer trained from scratch (no pretrained tokenizers)
+datasketch>=1.6.4         # MinHash LSH near-duplicate detection
+scikit-learn>=1.4.0       # our own Devanagari language classifier
+numpy>=1.26.0
+pandas>=2.2.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+tqdm>=4.66.0
+pytest>=8.0.0
+
+# Phase 2 (added later): torch

@@ -1,0 +1,255 @@
+{
+  "nepali": {
+    "language": "nepali",
+    "reference_statistics": {
+      "distinct_1": 0.5666,
+      "distinct_2": 0.9357,
+      "repetition_rate_4gram": 0.0036
+    },
+    "sweet_spot": {
+      "reference_statistics": {
+        "distinct_1": 0.5666,
+        "distinct_2": 0.9357,
+        "repetition_rate_4gram": 0.0036
+      },
+      "ranking": [
+        {
+          "setting": "T1.0",
+          "naturalness_distance": 0.0042,
+          "chrf2": 20.249,
+          "rep4_delta": -0.0018,
+          "distinct2_delta": 0.0024
+        },
+        {
+          "setting": "T1.0+topp0.95",
+          "naturalness_distance": 0.0057,
+          "chrf2": 20.447,
+          "rep4_delta": -0.002,
+          "distinct2_delta": -0.0037
+        },
+        {
+          "setting": "T1.0+topp0.9",
+          "naturalness_distance": 0.0288,
+          "chrf2": 20.519,
+          "rep4_delta": 0.0017,
+          "distinct2_delta": -0.0271
+        },
+        {
+          "setting": "T0.8+topp0.9+rep1.2",
+          "naturalness_distance": 0.0406,
+          "chrf2": 21.153,
+          "rep4_delta": -0.0014,
+          "distinct2_delta": -0.0392
+        },
+        {
+          "setting": "T1.0+topk50",
+          "naturalness_distance": 0.0527,
+          "chrf2": 20.278,
+          "rep4_delta": 0.003,
+          "distinct2_delta": -0.0497
+        },
+        {
+          "setting": "T1.5",
+          "naturalness_distance": 0.0618,
+          "chrf2": 18.578,
+          "rep4_delta": -0.0036,
+          "distinct2_delta": 0.0582
+        },
+        {
+          "setting": "T0.8+topp0.9+norepeat4",
+          "naturalness_distance": 0.0802,
+          "chrf2": 20.438,
+          "rep4_delta": -0.0027,
+          "distinct2_delta": -0.0775
+        },
+        {
+          "setting": "T0.8",
+          "naturalness_distance": 0.1022,
+          "chrf2": 20.217,
+          "rep4_delta": 0.0269,
+          "distinct2_delta": -0.0753
+        },
+        {
+          "setting": "greedy+norepeat4",
+          "naturalness_distance": 0.2186,
+          "chrf2": 17.332,
+          "rep4_delta": -0.0012,
+          "distinct2_delta": -0.2174
+        },
+        {
+          "setting": "T0.8+topp0.9",
+          "naturalness_distance": 0.2462,
+          "chrf2": 19.244,
+          "rep4_delta": 0.0714,
+          "distinct2_delta": -0.1748
+        },
+        {
+          "setting": "T0.5",
+          "naturalness_distance": 0.7981,
+          "chrf2": 16.275,
+          "rep4_delta": 0.3382,
+          "distinct2_delta": -0.4599
+        },
+        {
+          "setting": "greedy",
+          "naturalness_distance": 1.4826,
+          "chrf2": 13.335,
+          "rep4_delta": 0.7486,
+          "distinct2_delta": -0.734
+        }
+      ],
+      "best": "T1.0"
+    },
+    "checkpoint": "report\\Phase 2\\vocab_sweep\\ne_vocab_8000\\checkpoints\\last.pt",
+    "step": 28668,
+    "parameters": 25245312,
+    "split": "test",
+    "model_config": {
+      "vocab_size": 8000,
+      "context": 512,
+      "d_model": 512,
+      "n_layer": 7,
+      "n_head": 8,
+      "d_ff": 1920,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "rope_theta": 10000.0,
+      "use_rope": true
+    },
+    "intrinsic": {
+      "tokens_evaluated": 58856960,
+      "cross_entropy_nats": 3.2823,
+      "perplexity": 26.636,
+      "seconds": 719.1,
+      "bytes_per_token": 10.2781,
+      "bits_per_byte": 0.4607,
+      "compression_ratio_vs_raw": 17.36
+    },
+    "generation": {
+      "greedy": {
+        "bleu_char_4gram": 14.046,
+        "chrf2": 13.335,
+        "rouge_l": 7.608,
+        "distinct_1": 0.1282,
+        "distinct_2": 0.2017,
+        "repetition_rate_4gram": 0.7522
+      },
+      "greedy+norepeat4": {
+        "bleu_char_4gram": 20.056,
+        "chrf2": 17.332,
+        "rouge_l": 8.73,
+        "distinct_1": 0.3363,
+        "distinct_2": 0.7183,
+        "repetition_rate_4gram": 0.0024
+      },
+      "T0.5": {
+        "bleu_char_4gram": 18.066,
+        "chrf2": 16.275,
+        "rouge_l": 8.839,
+        "distinct_1": 0.2552,
+        "distinct_2": 0.4758,
+        "repetition_rate_4gram": 0.3418
+      },
+      "T0.8": {
+        "bleu_char_4gram": 24.436,
+        "chrf2": 20.217,
+        "rouge_l": 8.77,
+        "distinct_1": 0.4838,
+        "distinct_2": 0.8604,
+        "repetition_rate_4gram": 0.0305
+      },
+      "T1.0": {
+        "bleu_char_4gram": 23.925,
+        "chrf2": 20.249,
+        "rouge_l": 7.936,
+        "distinct_1": 0.5734,
+        "distinct_2": 0.9381,
+        "repetition_rate_4gram": 0.0018
+      },
+      "T1.5": {
+        "bleu_char_4gram": 18.365,
+        "chrf2": 18.578,
+        "rouge_l": 3.898,
+        "distinct_1": 0.7098,
+        "distinct_2": 0.9939,
+        "repetition_rate_4gram": 0.0
+      },
+      "T1.0+topk50": {
+        "bleu_char_4gram": 24.132,
+        "chrf2": 20.278,
+        "rouge_l": 8.938,
+        "distinct_1": 0.462,
+        "distinct_2": 0.886,
+        "repetition_rate_4gram": 0.0066
+      },
+      "T1.0+topp0.9": {
+        "bleu_char_4gram": 24.578,
+        "chrf2": 20.519,
+        "rouge_l": 8.105,
+        "distinct_1": 0.5111,
+        "distinct_2": 0.9086,
+        "repetition_rate_4gram": 0.0053
+      },
+      "T1.0+topp0.95": {
+        "bleu_char_4gram": 24.565,
+        "chrf2": 20.447,
+        "rouge_l": 7.88,
+        "distinct_1": 0.5478,
+        "distinct_2": 0.932,
+        "repetition_rate_4gram": 0.0016
+      },
+      "T0.8+topp0.9": {
+        "bleu_char_4gram": 22.777,
+        "chrf2": 19.244,
+        "rouge_l": 8.977,
+        "distinct_1": 0.3971,
+        "distinct_2": 0.7609,
+        "repetition_rate_4gram": 0.075
+      },
+      "T0.8+topp0.9+rep1.2": {
+        "bleu_char_4gram": 24.82,
+        "chrf2": 21.153,
+        "rouge_l": 7.92,
+        "distinct_1": 0.482,
+        "distinct_2": 0.8965,
+        "repetition_rate_4gram": 0.0022
+      },
+      "T0.8+topp0.9+norepeat4": {
+        "bleu_char_4gram": 24.703,
+        "chrf2": 20.438,
+        "rouge_l": 9.091,
+        "distinct_1": 0.4456,
+        "distinct_2": 0.8582,
+        "repetition_rate_4gram": 0.0009
+      }
+    },
+    "generation_config": {
+      "n_samples": 64,
+      "prompt_tokens": 128,
+      "continue_tokens": 128
+    },
+    "examples": [
+      {
+        "setting": "greedy",
+        "index": 0,
+        "prompt": "ाल्ने अनुमान थियो । तर, पाँचौँ दिन सिरोजले तीन र प्रसिद्द कृष्णाले एक विकेट लिएपछि 374 रनको लक्ष्य पछ्याएको इंग्ल्यान्ड 367 रनमा समेटिएको हो । म्याग्दीको पन्थोकमा सिँचाइ आयोजना बन्दै\n\nआइतबार, वैशाख 9,",
+        "generated": "2082\n\nआयोजनाको कुल लागत 1 अर्ब 10 करोड 9 लाख 91 हजार 9 सय 90 रुपैयाँ छ । आयोजनाले 1 अर्ब 10 करोड 9 लाख 91 हजार 9 सय 90 रुपैयाँमा सिँचाइ आयोजना निर्माण गरिरहेको छ । काठमाडौं । नेपाल राष्ट्र बैंकले 10 अर्ब रुपैयाँ बराबरको ‘क’ वर्गका बैंक तथा वित्तीय संस्थालाई 10 अर्ब रुपैयाँ बराबरको ‘क’ वर्गका बैंक तथ",
+        "reference": "2081\n\nसिँचाइ आयोजनाका लागि बजेट विनियोजन नहुँदा र पहिरोका कारण त्यसलाई अघि बढाउन सकिएको थिएन । गण्डकी प्रदेश सरकारले चालु आर्थिक वर्षमा 20 लाख बजेट विनियोजन गरेपछि निर्माणले गति लिएको हो । चेन्नाईको दोस्रो जित, अझै पुछारमै\n\nमंगलबार, वैशाख 2, 2082\n\nपहिलो इनिङमा लखनउका लागि ऋषभ पन्तले 49 बलमा समान चार"
+      },
+      {
+        "setting": "greedy",
+        "index": 1,
+        "prompt": "्यस्तो खाना पो खाने गर्नुपर्छ त ।”\nसन्दिप– “तर दिदी मलाई साग खानै मन लाग्दैन । मीठै लाग्दैन ?”\nदिदी– “अलीअली गरेर खानपर्छ पछि बिस्तारै बानी लाग्छ नी । यो हरियो सागपातको त अरु फाइदाहरु पनि छन् । जस्तै ",
+        "generated": "“अलीअली” ।\n“अलीअली खानु त राम्रो हो नि ।”\n“अलीअली खानु त राम्रो हो नि ।”\n“अलीअली खानु त राम्रो हो नि ।”\n“अलीअली खानु त राम्रो हो नि ।”\n“अलीअली खानु त राम्रो हो नि ।”\n“अलीअली खानु त राम्रो हो नि ।”\n“अलीअली खान",
+        "reference": "ः यसबाट भिटामीन–ए पनि प्राप्त हुन्छ जसले हाम्रो शरीरको बृद्धीमा सहयोग पु¥याउँछ र बच्चाहरुलाई रतन्धो हुनबाट पनि जोगाउँछ ।”\nसन्दिप– “अब मीठो नलागे पनि अलीअली गरेर खान शुरु गर्छु है दिदी ?”\nदिदी सूजीले उनलाई अंकालोमा कसिन् र भनिन्– “मेरो ज्ञानी भाइ ”\nभाइ सन्दिप फेरी एकपल्ट लाडे पल्टदै अकाशतिर मुख फर्का"
+      },
+      {
+        "setting": "greedy",
+        "index": 2,
+        "prompt": "सभाको रोस्ट्रमबाट मैले व्यक्त गरेको \"हस्तक्षेपकारी धारणा\" नेतृत्वलाई असहज लागेको उनीहरूको अनुहारको उदासीनताबाट स्पष्ट बुझ्न सकिन्थ्यो । तर मैले पार्टी एकता बचाउन गरेका प्रयास र संसदमा उठाएका प्रश्नहरू",
+        "generated": "प्रति गम्भीरतापूर्वक ध्यान दिन सक्थेँ ।\nपार्टी एकताको पक्षमा उभिएको भए पनि पार्टी एकताको पक्षमा उभिएको भए पनि पार्टी एकताको पक्षमा उभिएको भए पनि पार्टी एकताको पक्षमा उभिएको भए पनि पार्टी एकताको पक्षमा उभिएको भए पनि पार्टी एकताको पक्षमा उभिएको भए पनि पार्टी एकताको पक्षमा उभिएको भए पनि पार्टी एकताको प",
+        "reference": "सही थिए भन्ने कुरा समयले पुष्टि गरिदियो ।\nयसै मान्यताका आधारमा 2079 साल मंसिरमा पदाधिकारीहरूको सचिवालय बैठकमा नेतृत्वको विचार, नीति र कार्यशैलीमा देखिएका गम्भीर विचलनबारे सात पृष्ठ लामो सातबुँदे प्रस्ताव प्रस्तुत गरेको थिएँ । नेतृत्व परिवर्तन गर्नुपर्ने बाध्यात्मक स्थिति सिर्जना भएको संकेत गरेको थिए"
+      }
+    ]
+  }
+}

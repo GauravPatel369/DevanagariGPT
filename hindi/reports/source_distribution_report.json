@@ -1,0 +1,242 @@
+{
+  "sources": [
+    {
+      "source": "sangraha_unverified",
+      "source_type": "downloaded",
+      "documents": 2804626,
+      "tokens": 2039533476,
+      "share_pct": 62.94
+    },
+    {
+      "source": "sangraha",
+      "source_type": "downloaded",
+      "documents": 1292992,
+      "tokens": 802149291,
+      "share_pct": 24.76
+    },
+    {
+      "source": "indiccorp_v2",
+      "source_type": "downloaded",
+      "documents": 1985407,
+      "tokens": 273794046,
+      "share_pct": 8.45
+    },
+    {
+      "source": "web_scrape_extra",
+      "source_type": "manual",
+      "documents": 69175,
+      "tokens": 34947588,
+      "share_pct": 1.08
+    },
+    {
+      "source": "www.hindisamay.com",
+      "source_type": "manual",
+      "documents": 4312,
+      "tokens": 15346582,
+      "share_pct": 0.47
+    },
+    {
+      "source": "hi.wikisource.org",
+      "source_type": "manual",
+      "documents": 3839,
+      "tokens": 14428746,
+      "share_pct": 0.45
+    },
+    {
+      "source": "www.livehindustan.com",
+      "source_type": "manual",
+      "documents": 31950,
+      "tokens": 14083891,
+      "share_pct": 0.43
+    },
+    {
+      "source": "www.amarujala.com",
+      "source_type": "manual",
+      "documents": 14601,
+      "tokens": 8824875,
+      "share_pct": 0.27
+    },
+    {
+      "source": "wikipedia_hi",
+      "source_type": "manual",
+      "documents": 6313,
+      "tokens": 5191444,
+      "share_pct": 0.16
+    },
+    {
+      "source": "aajtak",
+      "source_type": "manual",
+      "documents": 9523,
+      "tokens": 4963193,
+      "share_pct": 0.15
+    },
+    {
+      "source": "livehindustan",
+      "source_type": "manual",
+      "documents": 10532,
+      "tokens": 4743937,
+      "share_pct": 0.15
+    },
+    {
+      "source": "forwardpress",
+      "source_type": "manual",
+      "documents": 944,
+      "tokens": 2981145,
+      "share_pct": 0.09
+    },
+    {
+      "source": "hi.wikipedia.org",
+      "source_type": "manual",
+      "documents": 3738,
+      "tokens": 2749710,
+      "share_pct": 0.08
+    },
+    {
+      "source": "amarujala",
+      "source_type": "manual",
+      "documents": 4139,
+      "tokens": 2466452,
+      "share_pct": 0.08
+    },
+    {
+      "source": "www.thelallantop.com",
+      "source_type": "manual",
+      "documents": 7668,
+      "tokens": 2109143,
+      "share_pct": 0.07
+    },
+    {
+      "source": "www.jagran.com",
+      "source_type": "manual",
+      "documents": 2490,
+      "tokens": 1942901,
+      "share_pct": 0.06
+    },
+    {
+      "source": "hindisamay",
+      "source_type": "manual",
+      "documents": 556,
+      "tokens": 1558899,
+      "share_pct": 0.05
+    },
+    {
+      "source": "navbharattimes.indiatimes.com",
+      "source_type": "manual",
+      "documents": 1369,
+      "tokens": 1042902,
+      "share_pct": 0.03
+    },
+    {
+      "source": "www.hindwi.org",
+      "source_type": "manual",
+      "documents": 2418,
+      "tokens": 980450,
+      "share_pct": 0.03
+    },
+    {
+      "source": "thewirehindi",
+      "source_type": "manual",
+      "documents": 5099,
+      "tokens": 934579,
+      "share_pct": 0.03
+    },
+    {
+      "source": "www.kavitakosh.org",
+      "source_type": "manual",
+      "documents": 2853,
+      "tokens": 915981,
+      "share_pct": 0.03
+    },
+    {
+      "source": "hindi.sportskeeda.com",
+      "source_type": "manual",
+      "documents": 1681,
+      "tokens": 903345,
+      "share_pct": 0.03
+    },
+    {
+      "source": "thewirehindi.com",
+      "source_type": "manual",
+      "documents": 3484,
+      "tokens": 692386,
+      "share_pct": 0.02
+    },
+    {
+      "source": "hindwi",
+      "source_type": "manual",
+      "documents": 2630,
+      "tokens": 684523,
+      "share_pct": 0.02
+    },
+    {
+      "source": "thelallantop",
+      "source_type": "manual",
+      "documents": 2395,
+      "tokens": 627941,
+      "share_pct": 0.02
+    },
+    {
+      "source": "www.aajtak.in",
+      "source_type": "manual",
+      "documents": 1031,
+      "tokens": 550913,
+      "share_pct": 0.02
+    },
+    {
+      "source": "www.jagranjosh.com",
+      "source_type": "manual",
+      "documents": 663,
+      "tokens": 528987,
+      "share_pct": 0.02
+    },
+    {
+      "source": "hi.wikibooks.org",
+      "source_type": "manual",
+      "documents": 382,
+      "tokens": 292193,
+      "share_pct": 0.01
+    },
+    {
+      "source": "www.bbc.com",
+      "source_type": "manual",
+      "documents": 126,
+      "tokens": 99907,
+      "share_pct": 0.0
+    },
+    {
+      "source": "www.forwardpress.in",
+      "source_type": "manual",
+      "documents": 236,
+      "tokens": 50924,
+      "share_pct": 0.0
+    },
+    {
+      "source": "jagranjosh",
+      "source_type": "manual",
+      "documents": 58,
+      "tokens": 48123,
+      "share_pct": 0.0
+    },
+    {
+      "source": "khelnow.com",
+      "source_type": "manual",
+      "documents": 19,
+      "tokens": 21307,
+      "share_pct": 0.0
+    }
+  ],
+  "manual_summary": {
+    "documents": 194224,
+    "tokens": 124712967,
+    "share_pct": 3.85
+  },
+  "downloaded_summary": {
+    "documents": 6083025,
+    "tokens": 3115476813,
+    "share_pct": 96.15
+  },
+  "total_summary": {
+    "documents": 6277249,
+    "tokens": 3240189795
+  }
+}

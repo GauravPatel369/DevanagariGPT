@@ -1,0 +1,583 @@
+{
+  "hindi": {
+    "language": "hindi",
+    "step": 27500,
+    "sentence": "भारतीय रिज़र्व बैंक ने डिजिटल मुद्रा प्रणाली की घोषणा की।",
+    "heatmap_tokens": 13,
+    "stats_tokens": 256,
+    "stats_passages": 16,
+    "layers_plotted": [
+      0,
+      3,
+      6
+    ],
+    "heads_plotted": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "entropy_bits": [
+      [
+        6.218,
+        6.066,
+        6.167,
+        6.021,
+        6.085,
+        6.426,
+        6.44,
+        5.922
+      ],
+      [
+        5.916,
+        6.465,
+        4.68,
+        6.48,
+        3.653,
+        3.798,
+        6.059,
+        3.638
+      ],
+      [
+        6.295,
+        5.858,
+        6.269,
+        5.926,
+        6.48,
+        4.847,
+        6.129,
+        5.853
+      ],
+      [
+        4.778,
+        5.26,
+        3.672,
+        6.028,
+        4.912,
+        4.192,
+        4.232,
+        5.497
+      ],
+      [
+        4.08,
+        3.452,
+        2.496,
+        3.861,
+        1.738,
+        3.181,
+        2.196,
+        2.849
+      ],
+      [
+        2.401,
+        2.897,
+        2.585,
+        5.079,
+        1.747,
+        3.445,
+        0.182,
+        2.918
+      ],
+      [
+        4.465,
+        3.525,
+        4.867,
+        4.564,
+        3.488,
+        4.416,
+        4.374,
+        4.951
+      ]
+    ],
+    "mean_distance": [
+      [
+        63.81,
+        59.94,
+        62.71,
+        63.5,
+        60.87,
+        64.45,
+        63.59,
+        59.34
+      ],
+      [
+        58.34,
+        74.31,
+        53.56,
+        75.26,
+        42.66,
+        43.43,
+        53.88,
+        50.22
+      ],
+      [
+        78.27,
+        50.99,
+        59.6,
+        54.3,
+        64.73,
+        57.74,
+        51.93,
+        31.81
+      ],
+      [
+        21.03,
+        26.8,
+        7.69,
+        40.02,
+        19.71,
+        13.6,
+        111.02,
+        94.52
+      ],
+      [
+        10.87,
+        6.23,
+        3.06,
+        10.52,
+        1.89,
+        3.76,
+        2.44,
+        4.18
+      ],
+      [
+        6.73,
+        7.9,
+        6.53,
+        34.72,
+        2.63,
+        6.96,
+        1.13,
+        5.72
+      ],
+      [
+        61.51,
+        77.61,
+        58.45,
+        63.26,
+        79.94,
+        28.18,
+        53.19,
+        52.71
+      ]
+    ],
+    "entropy_mean": 4.572,
+    "distance_mean": 41.5,
+    "entropy_by_layer": [
+      6.168,
+      5.086,
+      5.957,
+      4.822,
+      2.982,
+      2.657,
+      4.331
+    ],
+    "distance_by_layer": [
+      62.28,
+      56.46,
+      56.17,
+      41.8,
+      5.37,
+      9.04,
+      59.36
+    ],
+    "heads": [
+      {
+        "layer": 0,
+        "head": 0,
+        "entropy_bits": 6.218,
+        "mean_distance": 63.81,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 0,
+        "head": 1,
+        "entropy_bits": 6.066,
+        "mean_distance": 59.94,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 0,
+        "head": 2,
+        "entropy_bits": 6.167,
+        "mean_distance": 62.71,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 0,
+        "head": 3,
+        "entropy_bits": 6.021,
+        "mean_distance": 63.5,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 0,
+        "head": 4,
+        "entropy_bits": 6.085,
+        "mean_distance": 60.87,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 0,
+        "head": 5,
+        "entropy_bits": 6.426,
+        "mean_distance": 64.45,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 0,
+        "head": 6,
+        "entropy_bits": 6.44,
+        "mean_distance": 63.59,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 0,
+        "head": 7,
+        "entropy_bits": 5.922,
+        "mean_distance": 59.34,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 1,
+        "head": 0,
+        "entropy_bits": 5.916,
+        "mean_distance": 58.34,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 1,
+        "head": 1,
+        "entropy_bits": 6.465,
+        "mean_distance": 74.31,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 1,
+        "head": 2,
+        "entropy_bits": 4.68,
+        "mean_distance": 53.56,
+        "type": "long-range selective"
+      },
+      {
+        "layer": 1,
+        "head": 3,
+        "entropy_bits": 6.48,
+        "mean_distance": 75.26,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 1,
+        "head": 4,
+        "entropy_bits": 3.653,
+        "mean_distance": 42.66,
+        "type": "local / positional"
+      },
+      {
+        "layer": 1,
+        "head": 5,
+        "entropy_bits": 3.798,
+        "mean_distance": 43.43,
+        "type": "local / positional"
+      },
+      {
+        "layer": 1,
+        "head": 6,
+        "entropy_bits": 6.059,
+        "mean_distance": 53.88,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 1,
+        "head": 7,
+        "entropy_bits": 3.638,
+        "mean_distance": 50.22,
+        "type": "local / positional"
+      },
+      {
+        "layer": 2,
+        "head": 0,
+        "entropy_bits": 6.295,
+        "mean_distance": 78.27,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 2,
+        "head": 1,
+        "entropy_bits": 5.858,
+        "mean_distance": 50.99,
+        "type": "diffuse local"
+      },
+      {
+        "layer": 2,
+        "head": 2,
+        "entropy_bits": 6.269,
+        "mean_distance": 59.6,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 2,
+        "head": 3,
+        "entropy_bits": 5.926,
+        "mean_distance": 54.3,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 2,
+        "head": 4,
+        "entropy_bits": 6.48,
+        "mean_distance": 64.73,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 2,
+        "head": 5,
+        "entropy_bits": 4.847,
+        "mean_distance": 57.74,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 2,
+        "head": 6,
+        "entropy_bits": 6.129,
+        "mean_distance": 51.93,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 2,
+        "head": 7,
+        "entropy_bits": 5.853,
+        "mean_distance": 31.81,
+        "type": "diffuse local"
+      },
+      {
+        "layer": 3,
+        "head": 0,
+        "entropy_bits": 4.778,
+        "mean_distance": 21.03,
+        "type": "diffuse local"
+      },
+      {
+        "layer": 3,
+        "head": 1,
+        "entropy_bits": 5.26,
+        "mean_distance": 26.8,
+        "type": "diffuse local"
+      },
+      {
+        "layer": 3,
+        "head": 2,
+        "entropy_bits": 3.672,
+        "mean_distance": 7.69,
+        "type": "local / positional"
+      },
+      {
+        "layer": 3,
+        "head": 3,
+        "entropy_bits": 6.028,
+        "mean_distance": 40.02,
+        "type": "diffuse local"
+      },
+      {
+        "layer": 3,
+        "head": 4,
+        "entropy_bits": 4.912,
+        "mean_distance": 19.71,
+        "type": "diffuse local"
+      },
+      {
+        "layer": 3,
+        "head": 5,
+        "entropy_bits": 4.192,
+        "mean_distance": 13.6,
+        "type": "local / positional"
+      },
+      {
+        "layer": 3,
+        "head": 6,
+        "entropy_bits": 4.232,
+        "mean_distance": 111.02,
+        "type": "long-range selective"
+      },
+      {
+        "layer": 3,
+        "head": 7,
+        "entropy_bits": 5.497,
+        "mean_distance": 94.52,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 4,
+        "head": 0,
+        "entropy_bits": 4.08,
+        "mean_distance": 10.87,
+        "type": "local / positional"
+      },
+      {
+        "layer": 4,
+        "head": 1,
+        "entropy_bits": 3.452,
+        "mean_distance": 6.23,
+        "type": "local / positional"
+      },
+      {
+        "layer": 4,
+        "head": 2,
+        "entropy_bits": 2.496,
+        "mean_distance": 3.06,
+        "type": "local / positional"
+      },
+      {
+        "layer": 4,
+        "head": 3,
+        "entropy_bits": 3.861,
+        "mean_distance": 10.52,
+        "type": "local / positional"
+      },
+      {
+        "layer": 4,
+        "head": 4,
+        "entropy_bits": 1.738,
+        "mean_distance": 1.89,
+        "type": "local / positional"
+      },
+      {
+        "layer": 4,
+        "head": 5,
+        "entropy_bits": 3.181,
+        "mean_distance": 3.76,
+        "type": "local / positional"
+      },
+      {
+        "layer": 4,
+        "head": 6,
+        "entropy_bits": 2.196,
+        "mean_distance": 2.44,
+        "type": "local / positional"
+      },
+      {
+        "layer": 4,
+        "head": 7,
+        "entropy_bits": 2.849,
+        "mean_distance": 4.18,
+        "type": "local / positional"
+      },
+      {
+        "layer": 5,
+        "head": 0,
+        "entropy_bits": 2.401,
+        "mean_distance": 6.73,
+        "type": "local / positional"
+      },
+      {
+        "layer": 5,
+        "head": 1,
+        "entropy_bits": 2.897,
+        "mean_distance": 7.9,
+        "type": "local / positional"
+      },
+      {
+        "layer": 5,
+        "head": 2,
+        "entropy_bits": 2.585,
+        "mean_distance": 6.53,
+        "type": "local / positional"
+      },
+      {
+        "layer": 5,
+        "head": 3,
+        "entropy_bits": 5.079,
+        "mean_distance": 34.72,
+        "type": "diffuse local"
+      },
+      {
+        "layer": 5,
+        "head": 4,
+        "entropy_bits": 1.747,
+        "mean_distance": 2.63,
+        "type": "local / positional"
+      },
+      {
+        "layer": 5,
+        "head": 5,
+        "entropy_bits": 3.445,
+        "mean_distance": 6.96,
+        "type": "local / positional"
+      },
+      {
+        "layer": 5,
+        "head": 6,
+        "entropy_bits": 0.182,
+        "mean_distance": 1.13,
+        "type": "local / positional"
+      },
+      {
+        "layer": 5,
+        "head": 7,
+        "entropy_bits": 2.918,
+        "mean_distance": 5.72,
+        "type": "local / positional"
+      },
+      {
+        "layer": 6,
+        "head": 0,
+        "entropy_bits": 4.465,
+        "mean_distance": 61.51,
+        "type": "long-range selective"
+      },
+      {
+        "layer": 6,
+        "head": 1,
+        "entropy_bits": 3.525,
+        "mean_distance": 77.61,
+        "type": "long-range selective"
+      },
+      {
+        "layer": 6,
+        "head": 2,
+        "entropy_bits": 4.867,
+        "mean_distance": 58.45,
+        "type": "diffuse global"
+      },
+      {
+        "layer": 6,
+        "head": 3,
+        "entropy_bits": 4.564,
+        "mean_distance": 63.26,
+        "type": "long-range selective"
+      },
+      {
+        "layer": 6,
+        "head": 4,
+        "entropy_bits": 3.488,
+        "mean_distance": 79.94,
+        "type": "long-range selective"
+      },
+      {
+        "layer": 6,
+        "head": 5,
+        "entropy_bits": 4.416,
+        "mean_distance": 28.18,
+        "type": "local / positional"
+      },
+      {
+        "layer": 6,
+        "head": 6,
+        "entropy_bits": 4.374,
+        "mean_distance": 53.19,
+        "type": "long-range selective"
+      },
+      {
+        "layer": 6,
+        "head": 7,
+        "entropy_bits": 4.951,
+        "mean_distance": 52.71,
+        "type": "diffuse global"
+      }
+    ],
+    "figures": [
+      "C:\\LMA\\Mini_Project\\individual-project-GauravPatel369\\report\\Phase 2\\ablation\\figures\\hindi_attention_heatmaps.png",
+      "C:\\LMA\\Mini_Project\\individual-project-GauravPatel369\\report\\Phase 2\\ablation\\figures\\hindi_attention_summary.png"
+    ]
+  }
+}

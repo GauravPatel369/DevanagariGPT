@@ -1,0 +1,82 @@
+[
+  {
+    "model_type": "bpe",
+    "vocab_size": 8000,
+    "tokens": 303852177,
+    "fertility": 1.35,
+    "compression": 3.77,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.3625
+  },
+  {
+    "model_type": "bpe",
+    "vocab_size": 16000,
+    "tokens": 279073709,
+    "fertility": 1.24,
+    "compression": 4.1,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.3946
+  },
+  {
+    "model_type": "bpe",
+    "vocab_size": 24000,
+    "tokens": 269695232,
+    "fertility": 1.2,
+    "compression": 4.24,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.4084
+  },
+  {
+    "model_type": "bpe",
+    "vocab_size": 32000,
+    "tokens": 264848671,
+    "fertility": 1.17,
+    "compression": 4.32,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.4158
+  },
+  {
+    "model_type": "unigram",
+    "vocab_size": 8000,
+    "tokens": 297531318,
+    "fertility": 1.32,
+    "compression": 3.85,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.3702
+  },
+  {
+    "model_type": "unigram",
+    "vocab_size": 16000,
+    "tokens": 275758779,
+    "fertility": 1.22,
+    "compression": 4.15,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.3994
+  },
+  {
+    "model_type": "unigram",
+    "vocab_size": 24000,
+    "tokens": 267655121,
+    "fertility": 1.19,
+    "compression": 4.28,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.4115
+  },
+  {
+    "model_type": "unigram",
+    "vocab_size": 32000,
+    "tokens": 263640959,
+    "fertility": 1.17,
+    "compression": 4.34,
+    "unk_rate": 0.0,
+    "byte_fallback_count": 1101322,
+    "byte_fallback_rate": 0.4177
+  }
+]

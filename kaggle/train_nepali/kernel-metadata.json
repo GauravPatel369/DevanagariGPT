@@ -1,0 +1,18 @@
+{
+  "id": "gauravpatel123/lma-train-nepali",
+  "title": "LMA Train nepali",
+  "code_file": "train_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "gauravpatel123/lma-phase1-tokens",
+    "gauravpatel123/lma-phase2-code"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "enable_tpu": false,
+  "model_sources": []
+}

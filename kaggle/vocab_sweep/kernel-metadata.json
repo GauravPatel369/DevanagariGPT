@@ -1,0 +1,18 @@
+{
+  "id": "gauravpatel123/lma-ne-vocab-5000-train",
+  "title": "lma-ne-vocab-5000-train",
+  "code_file": "train_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "gauravpatel123/lma-ne-vocab-sweep",
+    "gauravpatel123/lma-phase2-code"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

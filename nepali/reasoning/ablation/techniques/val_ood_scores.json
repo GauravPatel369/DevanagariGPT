@@ -1,0 +1,57 @@
+{
+  "language": "nepali",
+  "n_questions": 500,
+  "rule": "highest written accuracy on val_ood",
+  "chosen": "name_pool_replay",
+  "scores": {
+    "pretrained": {
+      "checkpoint": "nepali\\checkpoints\\last.pt",
+      "step": 27500,
+      "choice": 0.41,
+      "written": 0.02,
+      "wrong_name_rate": 0.94
+    },
+    "baseline": {
+      "checkpoint": "nepali\\reasoning\\ablation\\techniques\\baseline\\best.pt",
+      "step": 312,
+      "choice": 0.454,
+      "written": 0.082,
+      "wrong_name_rate": 0.862
+    },
+    "name_pool": {
+      "checkpoint": "nepali\\reasoning\\ablation\\techniques\\name_pool\\best.pt",
+      "step": 312,
+      "choice": 0.47,
+      "written": 0.168,
+      "wrong_name_rate": 0.698
+    },
+    "name_pool_replay": {
+      "checkpoint": "nepali\\reasoning\\ablation\\techniques\\name_pool_replay\\best.pt",
+      "step": 312,
+      "choice": 0.47,
+      "written": 0.196,
+      "wrong_name_rate": 0.62
+    },
+    "ood_val": {
+      "checkpoint": "nepali\\reasoning\\ablation\\techniques\\ood_val\\best.pt",
+      "step": 50,
+      "choice": 0.422,
+      "written": 0.142,
+      "wrong_name_rate": 0.72
+    },
+    "ood_val_2ep": {
+      "checkpoint": "nepali\\reasoning\\ablation\\techniques\\ood_val_2ep\\best.pt",
+      "step": 100,
+      "choice": 0.434,
+      "written": 0.144,
+      "wrong_name_rate": 0.744
+    },
+    "replay": {
+      "checkpoint": "nepali\\reasoning\\ablation\\techniques\\replay\\best.pt",
+      "step": 312,
+      "choice": 0.444,
+      "written": 0.104,
+      "wrong_name_rate": 0.838
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "gauravpatel123/lma-ft-nepali",
+  "title": "lma-ft-nepali",
+  "code_file": "finetune_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "gauravpatel123/lma-phase2-code",
+    "gauravpatel123/lma-reasoning-data"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "gauravpatel123/lma-train-nepali"
+  ],
+  "model_sources": []
+}

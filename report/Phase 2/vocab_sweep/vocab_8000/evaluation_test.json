@@ -1,0 +1,255 @@
+{
+  "hindi": {
+    "language": "hindi",
+    "reference_statistics": {
+      "distinct_1": 0.3807,
+      "distinct_2": 0.8848,
+      "repetition_rate_4gram": 0.0017
+    },
+    "sweet_spot": {
+      "reference_statistics": {
+        "distinct_1": 0.3807,
+        "distinct_2": 0.8848,
+        "repetition_rate_4gram": 0.0017
+      },
+      "ranking": [
+        {
+          "setting": "T1.0",
+          "naturalness_distance": 0.0059,
+          "chrf2": 20.911,
+          "rep4_delta": 0.0015,
+          "distinct2_delta": -0.0044
+        },
+        {
+          "setting": "T1.0+topp0.95",
+          "naturalness_distance": 0.0235,
+          "chrf2": 21.073,
+          "rep4_delta": 0.0024,
+          "distinct2_delta": -0.0211
+        },
+        {
+          "setting": "T1.0+topp0.9",
+          "naturalness_distance": 0.0607,
+          "chrf2": 21.05,
+          "rep4_delta": 0.0191,
+          "distinct2_delta": -0.0416
+        },
+        {
+          "setting": "T0.8+topp0.9+rep1.2",
+          "naturalness_distance": 0.0688,
+          "chrf2": 21.239,
+          "rep4_delta": 0.0053,
+          "distinct2_delta": -0.0635
+        },
+        {
+          "setting": "T1.0+topk50",
+          "naturalness_distance": 0.0946,
+          "chrf2": 20.974,
+          "rep4_delta": 0.0109,
+          "distinct2_delta": -0.0837
+        },
+        {
+          "setting": "T1.5",
+          "naturalness_distance": 0.1032,
+          "chrf2": 18.065,
+          "rep4_delta": -0.0017,
+          "distinct2_delta": 0.1015
+        },
+        {
+          "setting": "T0.8+topp0.9+norepeat4",
+          "naturalness_distance": 0.11,
+          "chrf2": 20.354,
+          "rep4_delta": -0.0017,
+          "distinct2_delta": -0.1083
+        },
+        {
+          "setting": "T0.8",
+          "naturalness_distance": 0.1236,
+          "chrf2": 20.836,
+          "rep4_delta": 0.0167,
+          "distinct2_delta": -0.1069
+        },
+        {
+          "setting": "T0.8+topp0.9",
+          "naturalness_distance": 0.2308,
+          "chrf2": 19.985,
+          "rep4_delta": 0.0616,
+          "distinct2_delta": -0.1692
+        },
+        {
+          "setting": "greedy+norepeat4",
+          "naturalness_distance": 0.294,
+          "chrf2": 19.284,
+          "rep4_delta": -0.0012,
+          "distinct2_delta": -0.2928
+        },
+        {
+          "setting": "T0.5",
+          "naturalness_distance": 0.6879,
+          "chrf2": 17.421,
+          "rep4_delta": 0.2885,
+          "distinct2_delta": -0.3994
+        },
+        {
+          "setting": "greedy",
+          "naturalness_distance": 1.4335,
+          "chrf2": 14.098,
+          "rep4_delta": 0.7339,
+          "distinct2_delta": -0.6996
+        }
+      ],
+      "best": "T1.0"
+    },
+    "checkpoint": "report\\Phase 2\\vocab_sweep\\vocab_8000\\checkpoints\\last.pt",
+    "step": 28266,
+    "parameters": 25245312,
+    "split": "test",
+    "model_config": {
+      "vocab_size": 8000,
+      "context": 512,
+      "d_model": 512,
+      "n_layer": 7,
+      "n_head": 8,
+      "d_ff": 1920,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "rope_theta": 10000.0,
+      "use_rope": true
+    },
+    "intrinsic": {
+      "tokens_evaluated": 52815360,
+      "cross_entropy_nats": 3.1225,
+      "perplexity": 22.704,
+      "seconds": 636.6,
+      "bytes_per_token": 9.5233,
+      "bits_per_byte": 0.473,
+      "compression_ratio_vs_raw": 16.91
+    },
+    "generation": {
+      "greedy": {
+        "bleu_char_4gram": 13.714,
+        "chrf2": 14.098,
+        "rouge_l": 11.935,
+        "distinct_1": 0.0936,
+        "distinct_2": 0.1852,
+        "repetition_rate_4gram": 0.7356
+      },
+      "greedy+norepeat4": {
+        "bleu_char_4gram": 20.309,
+        "chrf2": 19.284,
+        "rouge_l": 14.263,
+        "distinct_1": 0.209,
+        "distinct_2": 0.592,
+        "repetition_rate_4gram": 0.0005
+      },
+      "T0.5": {
+        "bleu_char_4gram": 17.785,
+        "chrf2": 17.421,
+        "rouge_l": 13.362,
+        "distinct_1": 0.1875,
+        "distinct_2": 0.4854,
+        "repetition_rate_4gram": 0.2902
+      },
+      "T0.8": {
+        "bleu_char_4gram": 22.082,
+        "chrf2": 20.836,
+        "rouge_l": 13.593,
+        "distinct_1": 0.3102,
+        "distinct_2": 0.7779,
+        "repetition_rate_4gram": 0.0184
+      },
+      "T1.0": {
+        "bleu_char_4gram": 21.902,
+        "chrf2": 20.911,
+        "rouge_l": 12.486,
+        "distinct_1": 0.4015,
+        "distinct_2": 0.8804,
+        "repetition_rate_4gram": 0.0032
+      },
+      "T1.5": {
+        "bleu_char_4gram": 14.966,
+        "chrf2": 18.065,
+        "rouge_l": 7.238,
+        "distinct_1": 0.5943,
+        "distinct_2": 0.9863,
+        "repetition_rate_4gram": 0.0
+      },
+      "T1.0+topk50": {
+        "bleu_char_4gram": 22.454,
+        "chrf2": 20.974,
+        "rouge_l": 13.074,
+        "distinct_1": 0.2944,
+        "distinct_2": 0.8011,
+        "repetition_rate_4gram": 0.0126
+      },
+      "T1.0+topp0.9": {
+        "bleu_char_4gram": 22.41,
+        "chrf2": 21.05,
+        "rouge_l": 13.199,
+        "distinct_1": 0.3396,
+        "distinct_2": 0.8432,
+        "repetition_rate_4gram": 0.0208
+      },
+      "T1.0+topp0.95": {
+        "bleu_char_4gram": 22.359,
+        "chrf2": 21.073,
+        "rouge_l": 13.019,
+        "distinct_1": 0.3649,
+        "distinct_2": 0.8637,
+        "repetition_rate_4gram": 0.0041
+      },
+      "T0.8+topp0.9": {
+        "bleu_char_4gram": 20.996,
+        "chrf2": 19.985,
+        "rouge_l": 13.873,
+        "distinct_1": 0.2676,
+        "distinct_2": 0.7156,
+        "repetition_rate_4gram": 0.0633
+      },
+      "T0.8+topp0.9+rep1.2": {
+        "bleu_char_4gram": 22.576,
+        "chrf2": 21.239,
+        "rouge_l": 12.985,
+        "distinct_1": 0.3064,
+        "distinct_2": 0.8213,
+        "repetition_rate_4gram": 0.007
+      },
+      "T0.8+topp0.9+norepeat4": {
+        "bleu_char_4gram": 21.498,
+        "chrf2": 20.354,
+        "rouge_l": 13.0,
+        "distinct_1": 0.2938,
+        "distinct_2": 0.7765,
+        "repetition_rate_4gram": 0.0
+      }
+    },
+    "generation_config": {
+      "n_samples": 64,
+      "prompt_tokens": 128,
+      "continue_tokens": 128
+    },
+    "examples": [
+      {
+        "setting": "greedy",
+        "index": 0,
+        "prompt": "ुरादाबाद के बिलारी थाना के सैदपुर जगना गांव में सोमवार की शाम संदिग्ध परिस्थितयों में बंदूक से चली गोली के छर्रे लगने से दंपति...\nमुरादाबाद के बिलारी थाना के सैदपुर जगना गांव में सोमवार की शाम संदिग्ध",
+        "generated": "परिस्थितयों में बंदूक से चली गोली के छर्रे लगने से दंपति घायल हो गए। पुलिस ने घायल को इलाज के लिए अस्पताल में भर्ती कराया।\nथाना प्रभारी ने बताया कि घटना के बाद से ही पुलिस ने मौके पर पहुंचकर दंपति को गिरफ्तार कर लिया। पुलिस ने बताया कि घटना के बाद से ही दंपति को गिरफ्तार कर लिया गया है। {\"_id\":\"6a4b",
+        "reference": "परिस्थितयों में बंदूक से चली गोली के छर्रे लगने से दंपति घायल हो गए। परिजनों के मुताबिक बंदूक की नाल साफ करते समय गोली चलने से हादसा हुआ। घायल दंपति को चन्दौसी के सीएचसी में भर्ती कराया गया। जहां से दोनों को जिला अस्पताल रेफर कर दिया गया।\nसैदपुर जगना गांव निवासी अशोक पुत्र हरद्वारी ने बताया कि उसका "
+      },
+      {
+        "setting": "greedy",
+        "index": 1,
+        "prompt": "ा।\n- रिजल्ट देखने के बाद स्क्रीनशॉट या प्रिंट आउट जरूर लें लें।\n- कहां चेक करें तेलंगाना बोर्ड इंटर सेकंड ईयर का रिजल्ट\n-\nबोर्ड का नाम:तेलंगाना इंटरमीडिएट शिक्षा बोर्ड\n\n-\nपरीक्षा का नाम:कक्षा 10वीं/12",
+        "generated": "वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12वीं/12",
+        "reference": "वीं का बोर्ड एग्जाम\n\n-\nआधिकारिक वेबसाइट:\n\n-\nरिजल्ट की वेबसाइट:\n\nअन्य राज्यों के बोर्ड रिजल्ट के क्विक लिंक ट्राईबल में स्की-फेस्टिवल / अजेय\nसन सन सर्र सर्र\nबर्फ पर\nचटख झंडे\nलाल पीले नीले\nमजेंटा और पर्पल और फ्लॉरेसेंट बच्चे\nपाऊडर स्कीइंग\nवाह जी वाह !\nअभी कल ही तो पड़ी\nपाँच – छह फुट समझो\nइस बार तो\nकुल"
+      },
+      {
+        "setting": "greedy",
+        "index": 2,
+        "prompt": "ेव ऐप के संचालक सुभम सोनी, लेखा विभाग के कर्मचारी रोहित गुलाटी और अनिल कुमार अग्रवाल उर्फ अतुल अग्रवाल का नाम शामिल किया गया है। इसके साथ ही ईडी अब आने वाले दिनों में इस पूरे चार्जशीट में जिन लोगों को",
+        "generated": "शामिल किया जाएगा, उनके खिलाफ कार्रवाई की जाएगी।\nएड फ्री अनुभव के लिए अमर उजाला प्रीमियम सब्सक्राइब करें\nअमर उजाला प्रीमियम वीडियो सिर्फ सब्सक्राइबर्स के लिए उपलब्ध है\nप्रीमियम वीडियो\nसभी विशेष आलेख\nफ्री इ-पेपर\nसब्सक्राइब करें\n\nहम डाटा संग्रह टूल्स, जैसे की कुकीज के माध्यम से आपकी जानकारी एकत्र करते ",
+        "reference": "नाम शामिल है उनसे भी पूछताछ कर सकती है। ऐसा भी माना जा रहा है कि असीम दास के द्वारा कांग्रेस नेता पूर्व सीएम भूपेश बघेल का नाम लिए जाने पर बघेल से पूछताछ की जा सकती है।\nमहादेव के संचालकों को भारत लाने की तैयारी\nसाल 2023 में छत्तीसगढ़ में चर्चा में बना महादेव सट्टा ऐप पर सबसे पहले पुलिस के द्वारा कार"
+      }
+    ]
+  }
+}

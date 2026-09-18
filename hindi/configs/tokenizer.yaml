@@ -1,0 +1,35 @@
+# Model H — Hindi. Stage 8 tokenizer configuration.
+#
+# vocab_size below is the value SELECTED from the sweep. Re-run
+#   python -m lmacorpus.cli sweep --lang hindi
+# and update it from report/figures/hindi_vocab_sweep.png + the JSON table.
+#
+# Selection rule: fertility falls monotonically with vocabulary size, so
+# "lowest fertility" would always pick the largest candidate. The binding
+# constraint is the Phase-2 budget of ~25M parameters with TIED embeddings:
+#   V=8k -> 4.2M   V=16k -> 8.4M   V=24k -> 12.6M   V=32k -> 16.8M  (at d=512)
+# 32k would spend two thirds of the whole model on the embedding table. Choose
+# the knee where further fertility gains stop paying for the parameters.
+
+language: hindi
+lang_code: hi
+
+vocab_size: 10000
+model_type: unigram
+
+sweep_vocab_sizes: [5000, 8000, 10000]
+sweep_model_types: [bpe, unigram]
+
+# Phase-2 assumptions used to price each vocabulary size.
+d_model: 512
+param_budget: 25000000
+
+max_sample_lines: 8000000
+eval_docs: 5000
+
+# Sentences used for the side-by-side tokenization table in the report.
+example_sentences:
+  - "भारत एक विशाल और विविधतापूर्ण देश है।"
+  - "उसने कहा कि वह कल दिल्ली जाएगा।"
+  - "विज्ञान और प्रौद्योगिकी के क्षेत्र में तेजी से प्रगति हो रही है।"
+  - "राम श्याम से लंबा है और श्याम मोहन से लंबा है।"

@@ -1,0 +1,255 @@
+{
+  "hindi": {
+    "language": "hindi",
+    "reference_statistics": {
+      "distinct_1": 0.3898,
+      "distinct_2": 0.8754,
+      "repetition_rate_4gram": 0.0038
+    },
+    "sweet_spot": {
+      "reference_statistics": {
+        "distinct_1": 0.3898,
+        "distinct_2": 0.8754,
+        "repetition_rate_4gram": 0.0038
+      },
+      "ranking": [
+        {
+          "setting": "T1.0",
+          "naturalness_distance": 0.0074,
+          "chrf2": 20.623,
+          "rep4_delta": 0.0029,
+          "distinct2_delta": 0.0045
+        },
+        {
+          "setting": "T1.0+topp0.95",
+          "naturalness_distance": 0.0222,
+          "chrf2": 21.167,
+          "rep4_delta": 0.0035,
+          "distinct2_delta": -0.0187
+        },
+        {
+          "setting": "T1.0+topp0.9",
+          "naturalness_distance": 0.0397,
+          "chrf2": 20.999,
+          "rep4_delta": 0.0058,
+          "distinct2_delta": -0.0339
+        },
+        {
+          "setting": "T0.8+topp0.9+rep1.2",
+          "naturalness_distance": 0.0853,
+          "chrf2": 21.55,
+          "rep4_delta": 0.0105,
+          "distinct2_delta": -0.0748
+        },
+        {
+          "setting": "T1.0+topk50",
+          "naturalness_distance": 0.0941,
+          "chrf2": 20.762,
+          "rep4_delta": 0.0118,
+          "distinct2_delta": -0.0823
+        },
+        {
+          "setting": "T0.8+topp0.9+norepeat4",
+          "naturalness_distance": 0.0981,
+          "chrf2": 21.178,
+          "rep4_delta": -0.0036,
+          "distinct2_delta": -0.0945
+        },
+        {
+          "setting": "T1.5",
+          "naturalness_distance": 0.1151,
+          "chrf2": 17.401,
+          "rep4_delta": -0.0038,
+          "distinct2_delta": 0.1113
+        },
+        {
+          "setting": "T0.8",
+          "naturalness_distance": 0.1218,
+          "chrf2": 21.381,
+          "rep4_delta": 0.0169,
+          "distinct2_delta": -0.1049
+        },
+        {
+          "setting": "greedy+norepeat4",
+          "naturalness_distance": 0.2164,
+          "chrf2": 19.761,
+          "rep4_delta": -0.0036,
+          "distinct2_delta": -0.2128
+        },
+        {
+          "setting": "T0.8+topp0.9",
+          "naturalness_distance": 0.2352,
+          "chrf2": 20.61,
+          "rep4_delta": 0.0648,
+          "distinct2_delta": -0.1704
+        },
+        {
+          "setting": "T0.5",
+          "naturalness_distance": 0.6215,
+          "chrf2": 18.853,
+          "rep4_delta": 0.2538,
+          "distinct2_delta": -0.3677
+        },
+        {
+          "setting": "greedy",
+          "naturalness_distance": 1.3945,
+          "chrf2": 15.66,
+          "rep4_delta": 0.7161,
+          "distinct2_delta": -0.6784
+        }
+      ],
+      "best": "T1.0"
+    },
+    "checkpoint": "report\\Phase 2\\vocab_sweep\\vocab_5000\\checkpoints\\last.pt",
+    "step": 30273,
+    "parameters": 25546112,
+    "split": "test",
+    "model_config": {
+      "vocab_size": 5000,
+      "context": 512,
+      "d_model": 512,
+      "n_layer": 7,
+      "n_head": 8,
+      "d_ff": 2176,
+      "dropout": 0.1,
+      "tie_embeddings": true,
+      "rope_theta": 10000.0,
+      "use_rope": true
+    },
+    "intrinsic": {
+      "tokens_evaluated": 56563712,
+      "cross_entropy_nats": 2.9283,
+      "perplexity": 18.695,
+      "seconds": 677.3,
+      "bytes_per_token": 8.8922,
+      "bits_per_byte": 0.4751,
+      "compression_ratio_vs_raw": 16.84
+    },
+    "generation": {
+      "greedy": {
+        "bleu_char_4gram": 16.365,
+        "chrf2": 15.66,
+        "rouge_l": 13.326,
+        "distinct_1": 0.1022,
+        "distinct_2": 0.197,
+        "repetition_rate_4gram": 0.7199
+      },
+      "greedy+norepeat4": {
+        "bleu_char_4gram": 21.526,
+        "chrf2": 19.761,
+        "rouge_l": 14.886,
+        "distinct_1": 0.2507,
+        "distinct_2": 0.6626,
+        "repetition_rate_4gram": 0.0002
+      },
+      "T0.5": {
+        "bleu_char_4gram": 20.381,
+        "chrf2": 18.853,
+        "rouge_l": 14.38,
+        "distinct_1": 0.2069,
+        "distinct_2": 0.5077,
+        "repetition_rate_4gram": 0.2576
+      },
+      "T0.8": {
+        "bleu_char_4gram": 23.414,
+        "chrf2": 21.381,
+        "rouge_l": 13.307,
+        "distinct_1": 0.3108,
+        "distinct_2": 0.7705,
+        "repetition_rate_4gram": 0.0207
+      },
+      "T1.0": {
+        "bleu_char_4gram": 21.444,
+        "chrf2": 20.623,
+        "rouge_l": 11.753,
+        "distinct_1": 0.4046,
+        "distinct_2": 0.8799,
+        "repetition_rate_4gram": 0.0067
+      },
+      "T1.5": {
+        "bleu_char_4gram": 14.03,
+        "chrf2": 17.401,
+        "rouge_l": 7.274,
+        "distinct_1": 0.5968,
+        "distinct_2": 0.9867,
+        "repetition_rate_4gram": 0.0
+      },
+      "T1.0+topk50": {
+        "bleu_char_4gram": 22.504,
+        "chrf2": 20.762,
+        "rouge_l": 12.748,
+        "distinct_1": 0.2982,
+        "distinct_2": 0.7931,
+        "repetition_rate_4gram": 0.0156
+      },
+      "T1.0+topp0.9": {
+        "bleu_char_4gram": 22.74,
+        "chrf2": 20.999,
+        "rouge_l": 12.636,
+        "distinct_1": 0.3582,
+        "distinct_2": 0.8415,
+        "repetition_rate_4gram": 0.0096
+      },
+      "T1.0+topp0.95": {
+        "bleu_char_4gram": 22.739,
+        "chrf2": 21.167,
+        "rouge_l": 13.081,
+        "distinct_1": 0.3761,
+        "distinct_2": 0.8567,
+        "repetition_rate_4gram": 0.0073
+      },
+      "T0.8+topp0.9": {
+        "bleu_char_4gram": 22.429,
+        "chrf2": 20.61,
+        "rouge_l": 13.279,
+        "distinct_1": 0.2709,
+        "distinct_2": 0.705,
+        "repetition_rate_4gram": 0.0686
+      },
+      "T0.8+topp0.9+rep1.2": {
+        "bleu_char_4gram": 22.938,
+        "chrf2": 21.55,
+        "rouge_l": 12.451,
+        "distinct_1": 0.3052,
+        "distinct_2": 0.8006,
+        "repetition_rate_4gram": 0.0143
+      },
+      "T0.8+topp0.9+norepeat4": {
+        "bleu_char_4gram": 23.138,
+        "chrf2": 21.178,
+        "rouge_l": 13.168,
+        "distinct_1": 0.3066,
+        "distinct_2": 0.7809,
+        "repetition_rate_4gram": 0.0002
+      }
+    },
+    "generation_config": {
+      "n_samples": 64,
+      "prompt_tokens": 128,
+      "continue_tokens": 128
+    },
+    "examples": [
+      {
+        "setting": "greedy",
+        "index": 0,
+        "prompt": " मैनेजर) के रूप में अपनी सेवाएं दे रहे हैं।\nविस्तृत बायो:\nपरिचय और अनुभव: विकाश गौड़ भारतीय डिजिटल स्पोर्ट्स मीडिया का एक उभरता हुआ चेहरा हैं। लगभग 8 वर्षों के अनुभव के साथ, विकाश ने डिजिटल पत्रकारिता",
+        "generated": "की बारीकियों को जमीन से समझा है। 2017 में, वह 'लाइव हिन्दुस्तान' की स्पोर्ट्स टीम के साथ भी जुड़े।\nविकाश गौड़ ने डिजिटल पत्रकारिता में अपनी एक अलग पहचान बनाई है। 2017 में, वह 'लाइव हिन्दुस्तान' की स्पोर्ट्स टीम के साथ भी जुड़े।\nविकाश गौड़ ने डिजिटल पत्रकारिता की बारीकियों को जमीन से समझा है। 2017 मे",
+        "reference": "की बारीकियों को जमीन से समझा है। 2016 में अपने करियर की शुरुआत करने वाले विकाश ने डिजिटल-फर्स्ट अप्रोच के साथ खेल पत्रकारिता में अपनी एक अलग पहचान बनाई है। जनवरी 2021 से वह 'लाइव हिन्दुस्तान' की स्पोर्ट्स टीम के मुख्य स्तंभ बने हुए हैं, जहां वह कंटेंट प्लानिंग और स्पोर्ट्स कवरेज का नेतृत्व करते हैं।"
+      },
+      {
+        "setting": "greedy",
+        "index": 1,
+        "prompt": "इतनी कि\nकविताओं के हाथ थाम कर\nज़िन्दगी की झंझटों में कूद सकें\nजीना आसान बने\nऔर कविताओं के लिए भी बची रहे\nथोड़ी सी जगह\nउस आसान जीवन में !\n2003 असफलता / अजित सिंह तोमर\nमुद्दत बाद मिलनें पर उसने कहा\nबड़े",
+        "generated": "-बड़े क़दमों से\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके लिए\nउसके",
+        "reference": "अश्लील हो गए हो तुम\nऔर थोड़े घटिया भी\nउसने जवाब दिया\nकोई नई बात कहो\nइतने दिन बाद मिली हो\nऔर वही कह रही हो\nजो दुनिया कहती है\nअच्छा ! दुनिया ऐसा कहती है तुम्हारे बारे में?\nउसने चौंकते हुए कहा\nहाँ !\nफिर तुम ये नही हो सकते\nतुम तो दुनिया को गलत साबित करने के लिए पैदा हुए थे\nमैं गलत थी फिर इस हिसाब से\nअच्"
+      },
+      {
+        "setting": "greedy",
+        "index": 2,
+        "prompt": "ग्री की कमी आई।\nगोपालगंज, कैमूर और वाल्मीकिनगर में ज्यादा ठंड महसूस की। शुक्रवार को तापमान में आई गिरावट के बावजूद अधिकतर शहरों के अधिकतम तापमान सामान्य से ऊपर बना हुआ है।पटना में मध्यम कोहरा, धूप कुछ",
+        "generated": "कम रही।\nमौसम विभाग के अनुसार, 10 जनवरी को अधिकतम तापमान 1.2 डिग्री सेल्सियस दर्ज किया गया। अधिकतम तापमान 1.2 डिग्री सेल्सियस दर्ज किया गया। अधिकतम तापमान 1.2 डिग्री सेल्सियस दर्ज किया गया। अधिकतम तापमान 1.2 डिग्री सेल्सियस दर्ज किया गया। अधिकतम तापमान 1.2 डिग्री सेल्सियस दर्ज किया गया। अधिकतम तापमान",
+        "reference": "देर के लिए निकली\nप्रमुख शहरों का तापमान\nशहर अधिकतम न्यूनतम\nपटना 21.7 12.2\nगया 21 10.6\nभागलपुर 21.9 11.7\nपूर्णिया 24.8 9.9 नेत्र शिविर में 155 लोगों की हुई जांच\nगोविंद शुगर मिल ऐरा में निःशुल्क नेत्र शिविर लगाया गया। सीतापुर आंख अस्प्ताल से आये डॉक्टरों की टीम ने 155 लोगों की आंखों की जांच...\nखमरिया।"
+      }
+    ]
+  }
+}
