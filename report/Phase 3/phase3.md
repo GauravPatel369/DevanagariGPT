@@ -5,6 +5,8 @@
 **Author:** Gaurav Patel  
 **Branch:** `phase-3`  
 
+> 📘 **Code & Concept Guide**: For a comprehensive, step-by-step breakdown of where each component is implemented in the codebase and the conceptual/mathematical meaning of every metric, SFT loss mask, entity memorization proof, and query attention probe, see [`phase3_implementation_guide.md`](phase3_implementation_guide.md).
+
 ---
 
 ## 1. Executive Summary

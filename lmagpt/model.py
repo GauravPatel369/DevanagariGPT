@@ -222,7 +222,7 @@ class FeedForward(nn.Module):
 
 class Block(nn.Module):
     """One pre-norm Transformer block.
-
+    
     ``x = x + attn(norm(x))`` then ``x = x + ffn(norm(x))``.  Normalising the
     sublayer *input* leaves the residual stream itself untouched, so it forms an
     identity path from the embeddings to the final norm.

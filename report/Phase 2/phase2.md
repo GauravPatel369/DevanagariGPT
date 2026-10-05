@@ -5,6 +5,8 @@
 **Author**: Gaurav Patel
 **Branch**: `phase-2`
 
+> 📘 **Code & Concept Guide**: For a comprehensive, step-by-step breakdown of where each model component is implemented in the codebase and the conceptual/mathematical meaning of every metric, tensor operation, and design choice, see [`phase2_implementation_guide.md`](phase2_implementation_guide.md).
+
 > Every number in this report is read from a measured artifact: `report/Phase 2/evaluation_test.json`,
 > `attention_analysis.json`, or the training logs in `logs/`. Regenerate them with the commands in Section 11.
 

@@ -5,6 +5,8 @@
 **Author**: Gaurav Patel  
 **Repository Branch**: `phase-1`
 
+> 📘 **Code & Concept Guide**: For a detailed breakdown of where each pipeline stage is implemented in the codebase and the conceptual/mathematical meaning of every metric and design choice, see [`phase1_implementation_guide.md`](phase1_implementation_guide.md).
+
 ---
 
 ## 1. Executive Summary
@@ -242,7 +244,7 @@ Train manual fraction **0.2000** — requirement $\ge 0.20$ **SATISFIED**. Token
 ## 5. Tokenizer Architecture & Hyperparameter Sweeps
 
 ### 5.1 Empirical Evaluation Results: Hindi (`hi`)
-*Empirically loaded directly from [`report/Hindi_report.json`](file:///c:/LMA/Mini_Project/individual-project-GauravPatel369/report/Hindi_report.json) on held-out validation split (`val.txt`)*
+*Empirically loaded directly from [`Hindi_report.json`](Hindi_report.json) on held-out validation split (`val.txt`)*
 
 | Model Configuration | Fertility (Tok/Word) | Compression (Char/Tok) | UNK Rate (%) | ASCII Fallback (%) | Non-ASCII Fallback (%) | Total Byte Fallback (%) |
 |---|---|---|---|---|---|---|
@@ -254,7 +256,7 @@ Train manual fraction **0.2000** — requirement $\ge 0.20$ **SATISFIED**. Token
 | **UNIGRAM 10,000 [WINNER]** | `1.34` tok/word | `3.79` char/tok | `0.0000%` | `1.2032%` | `0.0000%` | `1.2032%` |
 
 ### 5.2 Empirical Evaluation Results: Nepali (`ne`)
-*Empirically loaded directly from [`report/Nepli_report.json`](file:///c:/LMA/Mini_Project/individual-project-GauravPatel369/report/Nepli_report.json) on held-out validation split (`val.txt`)*
+*Empirically loaded directly from [`Nepli_report.json`](Nepli_report.json) on held-out validation split (`val.txt`)*
 
 | Model Configuration | Fertility (Tok/Word) | Compression (Char/Tok) | UNK Rate (%) | ASCII Fallback (%) | Non-ASCII Fallback (%) | Total Byte Fallback (%) |
 |---|---|---|---|---|---|---|

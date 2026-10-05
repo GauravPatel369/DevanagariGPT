@@ -52,7 +52,7 @@ def stream_source(
     os.environ["PYTHONUTF8"] = "1"
     from datasets import load_dataset
 
-    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN") 
+    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")
     ds = load_dataset(repo, config, split=split, streaming=True, token=token)
     stats = {"source": source, "seen": 0, "written": 0, "chars": 0}
     with ShardWriter(out_dir) as w:
